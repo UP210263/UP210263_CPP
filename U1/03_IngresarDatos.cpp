@@ -45,6 +45,15 @@ cout <<"Este programa muestra el ingreso de datos por el usuario.  \n";
 
     cout <<"==============================================================================" << endl;
 
+
+printf("Usando la función printf y scanf\n");
+printf("Ingresa un dato tipo entero");
+scanf("%d", &entero);
+printf("El dato ingresado es: %i \n", entero);
+
+
+
     return 0;
 
 }
+
