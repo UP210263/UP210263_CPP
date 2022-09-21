@@ -16,10 +16,32 @@ int main(){
     float flotante;
     double grande;
     char caracter;
-    cout <<"Este programa muestra el ingrso de datos por el usuario.  \n";
-    cout <<"Ingresa un dato tipo entero: ";
+    
+    cout <<"Este programa muestra el ingreso de datos por el usuario.  \n";
+    cout <<"Ingresa un dato tipo caracter: ";
     cin >> caracter;
     cout <<"El dato ingresado es : " << caracter<< endl;
+
+    cout <<"==============================================================================" << endl;
+
+    cout <<"Este programa muestra el ingreso de datos por el usuario.  \n";
+    cout <<"Ingresa un dato tipo flotante: ";
+    cin >> flotante;
+    cout <<"El dato ingresado es : " << flotante << endl;
+
+    cout <<"==============================================================================" << endl;
+
+cout <<"Este programa muestra el ingreso de datos por el usuario.  \n";
+    cout <<"Ingresa un dato tipo entero: ";
+    cin >> entero;
+    cout <<"El dato ingresado es : " << entero << endl;
+
+    cout <<"==============================================================================" << endl;
+
+    cout <<"Este programa muestra el ingreso de datos por el usuario.  \n";
+    cout <<"Ingresa un dato tipo double: ";
+    cin >> grande;
+    cout <<"El dato ingresado es : " << grande << endl;
 
     cout <<"==============================================================================" << endl;
 
