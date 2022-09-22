@@ -20,11 +20,44 @@ int num;
 cout <<"Ingrese un valor entero:  ";
 cin >>num;
 
-if(num==dato){
+if(num>dato){
 
-    cout <<"Genial ingresaste el número: "<<dato<< "  :)    yo también."<< endl;
+    cout <<"Tú valor es mayor a los primeros  "<<dato<< " números."<< endl;
 
 }
+
+if(num<dato){
+
+    cout <<"Tú valor está dentro de los primeros  "<<dato-1<< " números."<< endl;
+
+}
+
+if(num==dato){
+
+    cout <<"Genial ingresaste el  "<<dato<< " :) , yo también."<< endl;
+
+}
+
+if(num!=dato){
+
+    cout <<"Tú valor no es el  "<<dato<< " verdad."<< endl;
+
+}
+
+if(num>=dato){
+
+    cout <<"Tú valor es mayor o igual al "<<dato<< "  -.-"<< endl;
+
+}
+
+if(num<=dato){
+
+    cout <<"Tú valor está dentro de los primeros  "<<dato<< " números."<< endl;
+
+}
+
+
+return 0;
 
 
 }
