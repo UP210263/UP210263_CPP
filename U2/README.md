@@ -12,8 +12,8 @@ Fuera de los if se en cuentran, antes de ellos, la declaracion de las tres varia
 <br><br>
 
 
-<img scr="imagenes/ejmplo8500.png" >
-<img scr="imagenes/ejemplo10000.png" >
-<img scr="imagenes/ejemplo20000.png" >
-<img scr="imagenes/ejemplo36200.png" >
-<img scr="imagenes/ejemplo65000.png" >
+<img src="imagenes/ejmplo8500.png" >
+<img src="imagenes/ejemplo10000.png" >
+<img src="imagenes/ejemplo20000.png" >
+<img src="imagenes/ejemplo36200.png" >
+<img src="imagenes/ejemplo65000.png" >
