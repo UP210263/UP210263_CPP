@@ -35,7 +35,7 @@ Asignandole una renta de $8,500<br>
 <img src="imagenes/ejemplo65000.png" ><br>
 
 <br><br>
-    <h3>actividad 02:</h3>
+    <h3>Actividad 02:</h3>
     
     
   
