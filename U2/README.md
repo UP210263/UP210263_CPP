@@ -1,7 +1,7 @@
 
 <h1>Unidad II</h1>
 <p>En esta unidad se aplica el uso de algunas estructuras de control</p><br>
-<b>Actividad 01:<br></b> 
+<H3>Actividad 01:</h3> 
 <b>Cálculo de impuestos:</b>Se aplico la estructura de control IF en su forma más simple, con doble condición.
 <p>EL proposito de este pequeño programa es calcular e informar del impuesto que le corresponde a cada usuario dependiendo de su renta anual</p>
 <img src="imagenes/code1.png" >
@@ -33,6 +33,9 @@ Asignandole una renta de $8,500<br>
    <h5>5.-Renta > ó = $60,000</h5>
        Asignandole una renta de $65,000<br>
 <img src="imagenes/ejemplo65000.png" ><br>
-   
+
+<br><br>
+    <h3>actividad 02:</h3>
+    
     
   
