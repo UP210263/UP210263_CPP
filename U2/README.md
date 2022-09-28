@@ -24,18 +24,20 @@ Asignandole una renta de $8,500<br>
     
   <h5>3.-Renta <  $35,000, pero > ó = $20,000</h5>
       Asignando una renta de $20,000<br>
-<img src="imagenes/ejemplo20000.png" ><br>
-      
+  <img src="imagenes/ejemplo20000.png" ><br>      
   <h5> 4.-Renta <  $60,000, pero > ó = $35,000</h5>
        Asignandole una renta de $36,200<br>
-<img src="imagenes/ejemplo36200.png" ><br>
+  <img src="imagenes/ejemplo36200.png" ><br>
       
-   <h5>5.-Renta > ó = $60,000</h5>
+  <h5>5.-Renta > ó = $60,000</h5>
        Asignandole una renta de $65,000<br>
-<img src="imagenes/ejemplo65000.png" ><br>
+  <img src="imagenes/ejemplo65000.png" ><br>
 
-<br><br>
-    <h3>Actividad 02:</h3>
+<br><br><br>
+<h3>Actividad 02: </h3>
+<aling=center p>En el código mostrado a continuación tiene la función de calcular y presentar el bono adicional al salario que le corresponde al usuario del programa,esto dependiendo exlusivamente del desempeño observado en sus labores;dicho desempeño se clasifica en tres categorias: Inaceptable=0.0, Acetable=0.4 y Meritorio=0.6 ó mayor pero menor a 1. Sus bonos serán el resultado de su nota de desempeño multiplicada por el valor máximo $2,400. 
+Nota:Cualquier otro valor distinto a los anteriores será marcado como invalido.
+
     
     
   
