@@ -11,26 +11,31 @@ using namespace std;
 
 int main(){
 
-int old;
+//variables that the program need to run
+int age;
 int cost;
-cout << "Enter you old: " ;
-cin >>old;
 
-if (old<0){
+//Here the user have to read the personal old
+cout << "Enter you old: " ;
+cin >>age;
+
+//Here the if compare the age variable with  the diferents age categories for give value to cost variable
+if (age<0){
     cout << "The number entered is invalue, try one more time please."<< endl;
 }else{
-    if (old<4){
+    if (age<4){
         cout << "Your enter is free!!"<<endl;
         cost=0;
 
-    }else if (old>18){
+    }else if (age>18){
         cost=10;
     }else 
     {
        cost=5; 
     }
-    cout <<"The cost of your enter is: $" << cost<<endl;
+    cout <<"The cost of your enter is: $" << cost<<endl;//Print the correspondent cost to user
 }
+return 0;
 }
 
 
