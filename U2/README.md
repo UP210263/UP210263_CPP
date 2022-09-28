@@ -34,9 +34,30 @@ Asignandole una renta de $8,500<br>
   <img src="imagenes/ejemplo65000.png" ><br>
 
 <br><br><br>
-<h3>Actividad 02: </h3>
-<aling=center p>En el código mostrado a continuación tiene la función de calcular y presentar el bono adicional al salario que le corresponde al usuario del programa,esto dependiendo exlusivamente del desempeño observado en sus labores;dicho desempeño se clasifica en tres categorias: Inaceptable=0.0, Acetable=0.4 y Meritorio=0.6 ó mayor pero menor a 1. Sus bonos serán el resultado de su nota de desempeño multiplicada por el valor máximo $2,400. 
-Nota:Cualquier otro valor distinto a los anteriores será marcado como invalido.
+<h3>Actividad 02: </h3><BR>
+   <p><b>Calculo de bonos:</b>En el código mostrado a continuación tiene la función de calcular y presentar el bono adicional al salario que le corresponde al usuario del programa,esto dependiendo exlusivamente del desempeño observado en sus labores;dicho desempeño se clasifica en tres categorias: Inaceptable=0.0, Acetable=0.4 y Meritorio=0.6 ó mayor pero menor a 1. Sus bonos serán el resultado de su nota de desempeño multiplicada por el valor máximo $2,400. 
+Nota:Cualquier otro valor distinto a los anteriores será marcado como invalido.<p>
+ <br><br>
+  <img src="imagenes/02/bonoCode1.png"><br>
+  <img src="imagenes/02/bonoCode2.png"><br>
+  <br>
+  Los posibles reultados son los mencionados anteriormente, siendo que si se ingresa un 0.0 el resultado será: <br>
+  <img src="imagenes/02/inaceplabe.png"><br>
+   y cuando se ingrese un 0.4 se imprimirá:<br>
+  <img src="imagenes/02/aceptable.png"><br>
+  y en dado caso de que el empleado ingrese el desempeño de 0.6 aparecerá:<br>
+  <img src="imagenes/02/apenasMeritoria.png"><br>
+  en dado caso que el desempeño sea mayor a 0.6 y este dentro del rango aceptable del uno,deberá aparecer una impreción como la siguiente:<br>
+  <img src="imagenes/02/Meritoria.png"><br>
+ Esos son los resultados correspondientes a los desempeños aceptados , pero en caso de ingresar un numero no aceptado se mandará lo siguiente:<br>
+  <img src="imagenes/02/noValida.png">
+  
+  
+  
+  
+  
+  
+  
 
     
     
