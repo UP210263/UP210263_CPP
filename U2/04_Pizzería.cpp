@@ -21,7 +21,7 @@ int main(){
      {
         if (choose==1){
             cout <<"choose vegetarian pizza."<<endl;
-            cout <<"Now chose the ingredients you want, the options are: "<<endl;
+            cout <<"Now choose the ingredients you want, the options are: "<<endl;
             cout <<"NOTE: All pizzas have motzarell1a  and tomato."<<endl;
             cout <<"1.Pepper "<<endl<<"2.Tófu "<<endl;
             cin >>ingredients;
@@ -38,7 +38,7 @@ int main(){
 
         }else{
             cout << "Choose regular pizza."<<endl;
-            cout <<"Now chose the ingredients you want, the options are: "<<endl;
+            cout <<"Now choose the ingredients you want, the options are: "<<endl;
             cout <<"NOTE: All pizzas have motzarella  and tomato."<<endl;
             cout <<"1.Pepperoni. "<<endl<<"2.Ham. "<<"3.Salmon. "<<endl;
             cin >>ingredients;
