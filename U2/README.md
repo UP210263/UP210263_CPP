@@ -34,16 +34,16 @@ Asignandole una renta de $8,500<br>
   <img src="imagenes/ejemplo65000.png" ><br>
 
 <br><br><br>
-<h3>Actividad 02: </h3><BR>
-   <p><b>Calculo de bonos:</b>En el código mostrado a continuación tiene la función de calcular y presentar el bono adicional al salario que le corresponde al usuario del programa,esto dependiendo exlusivamente del desempeño observado en sus labores;dicho desempeño se clasifica en tres categorias: Inaceptable=0.0, Acetable=0.4 y Meritorio=0.6 ó mayor pero menor a 1. Sus bonos serán el resultado de su nota de desempeño multiplicada por el valor máximo $2,400. 
-Nota:Cualquier otro valor distinto a los anteriores será marcado como invalido.<p>
+<h3>Activity 02: </h3><BR>
+   <p><b>Bonus calculation: </b>The next code have to calculate and show additional bonus for the user. The value of this bonus depend exclusively of note about his work. This notes have three categories: Unacceptable=0.0, Accetable=0.4 and Meritorious=0.6 or greater but smaller than 1. Their bonus will be result of their note by $2,400, that is the maximum value. 
+Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
  <br><br>
   <img src="imagenes/02/bonoCode1.png"><br>
   <img src="imagenes/02/bonoCode2.png"><br>
   <br>
-  Los posibles reultados son los mencionados anteriormente, siendo que si se ingresa un 0.0 el resultado será: <br>
+  The possibles worgs are mentionated anteriormente. If user entre 0.0, the answer will be: <br>
   <img src="imagenes/02/inaceplabe.png"><br>
-   y cuando se ingrese un 0.4 se imprimirá:<br>
+   and when user enter 0.4 the programm will print:<br>
   <img src="imagenes/02/aceptable.png"><br>
   y en dado caso de que el empleado ingrese el desempeño de 0.6 aparecerá:<br>
   <img src="imagenes/02/apenasMeritoria.png"><br>
@@ -51,6 +51,9 @@ Nota:Cualquier otro valor distinto a los anteriores será marcado como invalido.
   <img src="imagenes/02/Meritoria.png"><br>
  Esos son los resultados correspondientes a los desempeños aceptados , pero en caso de ingresar un numero no aceptado se mandará lo siguiente:<br>
   <img src="imagenes/02/noValida.png">
+ <br><br>
+ <h3>Activity 03 </h3>
+ <p><b>Choose a pizza: </b>This program is a great option for buy a pizza online. 
   
   
   
