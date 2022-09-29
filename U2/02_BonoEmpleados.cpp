@@ -44,6 +44,7 @@ int main(){
     cout <<"La calificación ingresada no es valida."<<endl;
     cout <<" "<<endl;
   }
+  return 0;
 }
 
 
