@@ -1,6 +1,6 @@
 <p >
 <h1><b>Topics of programation</b></h1>
- <img   width="1000" height="50" src="imagenes/gris.jpeg">
+ <img   width="1000" height="10" src="imagenes/gris.jpeg">
 <img align="center" width="550" height="100" src="https://static.wixstatic.com/media/17e270_2a1d9b47d4b842578573ee0c2890958b~mv2.gif">
 
 <p>
