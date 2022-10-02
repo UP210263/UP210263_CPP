@@ -1,6 +1,6 @@
 <p >
 <h1><b>Topics of programation</b></h1>
- <img   width="1000" height="10" src="imagenes/gris.jpeg">
+ 
 <img align="center" width="550" height="100" src="https://static.wixstatic.com/media/17e270_2a1d9b47d4b842578573ee0c2890958b~mv2.gif">
 
 <p>
@@ -23,19 +23,13 @@ To be able to program in c++ I use the "Visual studio code" development environm
 <br><br><br><br>
   <img align="left" width="170" height="150" src= "imagenes/for.png"><br><br><br>The for loop is similar to the while loop with the marked difference that in the for loop it is necessary to know how many times the process inside the for loop is going to be executed.
 
-
-
 </p>
+<br><br><br>
 
-
-
+<img   width="1000" height="10" src="imagenes/gris.jpeg">
 <br><br>
+<p align="right"><b>Author:Martínes Osiris, student at the <a href="https://upa.edu.mx/">Polytechnic University of Aguascalientes</a>,in computer systems engineering.</b></p>
 
-<br><br>
-<p algn="rigth">Author:Martínes Osiris, student at the <a href="https://upa.edu.mx/">Polytechnic University of Aguascalientes</a>,in computer systems career.
+<p><img align="right"widht="200" height="200" src="imagenes/upa.jpg" herf="https://upa.edu.mx/">
+<img align="left" widht="170" height="170" src="imagenes/isei.png"></p>
 
-<br>
-<p>
-<img align="left" widht="100" height="100" src="imagenes/isei.png">
-<img align="right" width="200" height="200" alt="https://upa.edu.mx/" src="imagenes/upa.jpg">
-</p>
