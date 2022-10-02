@@ -31,5 +31,11 @@ To be able to program in c++ I use the "Visual studio code" development environm
 
 <br><br>
 
-<br><br>Author:Martínes Osiris, student at the Polytechnic University of Aguascalientes
+<br><br>
+<p algn="rigth">Author:Martínes Osiris, student at the <a href="https://upa.edu.mx/">Polytechnic University of Aguascalientes</a>,in computer systems career.
 
+<br>
+<p>
+<img align="left" widht="100" height="100" src="imagenes/isei.png">
+<img align="right" width="200" height="200" alt="https://upa.edu.mx/" src="imagenes/upa.jpg">
+</p>
