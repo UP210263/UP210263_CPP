@@ -15,19 +15,20 @@ using namespace std;
 
 int main(){
 
-//Declaración de variables
+//Declaration of variables
    int renta;
    int impuestoPorcentaje;
    int impuestoDinero;
 
-//Solicitando información al usuario
-  cout <<"Ingrese el valor de su renta:  ";
+//Request information about user
+  cout <<"Enter the value of your rent:  ";
   cin >> renta;
   
 
-  //Analisis comparativo del valor ingresado por el usuario con las diferentes categorias
-  //de rentas para asignale el impuesto correspondiente.
-  
+  //Comparative analysis of the value entered by the user with the different categories
+  //of income to assign the corresponding tax.
+
+
   if(renta<10000){
       impuestoPorcentaje=5;
   }
@@ -48,16 +49,16 @@ int main(){
       impuestoPorcentaje=45;
   }
 
-//calculo del valor del economico del impuesto dependiendo de la renta del usuario.
+//calculation of the economic value of the tax depending on the user's income.
 impuestoDinero= renta*impuestoPorcentaje/100;
 
 
-//Impreción de los resultados. Informando a los usuarios que impuesto se le asigna 
-//   y cuanto deberá pagar.
+//Printing of the results. Informing users that tax is assigned
+// and how much you will have to pay.
 
-cout <<"Debes pagar un impuesto de  "<<impuestoPorcentaje<< " %";
-cout <<" , por lo tanto el valor de tu impuesto es de  $" << impuestoDinero<<endl;
-cout <<"El costo total a pagar es de  $"<< impuestoDinero+renta<<endl;
+cout <<"You have to pay a tax of:  "<<impuestoPorcentaje<< " %";
+cout <<" , therefore the value of your tax is $" << impuestoDinero<<endl;
+cout <<"The total cost to pay is $"<< impuestoDinero+renta<<endl;
 cout <<endl;
 
 return 0;

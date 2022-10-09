@@ -10,38 +10,37 @@ Description: Calculo del bono para los empleados usando IF con tres posibilidade
 using namespace std;
 
 int main(){
-//Declaración de variables correspondientes al total del bono, la calificación del empleado
-// y la cantidad del bono que recibirá el empleado según su calificación
+//Declaration of variables corresponding to the total of the bonus, the qualification of the employee
+// and the amount of the bonus the employee will receive based on their qualification
   double calificacionEmpleado;
   double bono=2400;
   double bonoAsignado;
   std::string desempeño;
 
-  //Petición al empleado de su calificación
-  cout <<"Ingrese su calificación ";
+  //Ask employees for their rating.
+  cout <<"Write your rating:  ";
   cin >>calificacionEmpleado;
 
-//Condicional para dar o no el bono, y cuanto se le asigna del bono según su calificación
+//Conditional to give or not the bonus, and how much the bonus is assigned according to your qualification
   if (calificacionEmpleado==0.4 || calificacionEmpleado>=0.6 && calificacionEmpleado<=1|| calificacionEmpleado==0.0 ){
-       bonoAsignado=bono*calificacionEmpleado;//cálculo de porcentaje en dinero de bono que se le asigna al empleado
+       bonoAsignado=bono*calificacionEmpleado;//calculation of percentage in bonus money that is assigned to the employee
        if (calificacionEmpleado==0.4){
-           desempeño=" Aceptable ";
+           desempeño=" Acceptable ";
        }else{
         if(calificacionEmpleado>=0.6){
-          desempeño=" Meritorio ";
+          desempeño=" Meritorious ";
         }else{
-          desempeño=" Inaceptable ";
+          desempeño=" Unacceptable ";
         }
        }
        
-       cout <<"Su desempeño es"<<desempeño<<"le corresponde un bono de: $"<<bonoAsignado<<endl;
+       cout <<"His preformance is "<<desempeño<<"You are entitled to a bonus of: $"<<bonoAsignado<<endl;
        cout <<" "<<endl;
-       //Impresión del bono asignado para informar al empleado
-
+       //Printing of the bonus assigned to inform the employee
   }
-  //Asignación de una respuesta a cualquier posible valor no valido ingresado por el empleado
+  //Assigning a response to any possible invalid value entered by the employee
   else{
-    cout <<"La calificación ingresada no es valida."<<endl;
+    cout <<"The grade entered is not valid."<<endl;
     cout <<" "<<endl;
   }
   return 0;

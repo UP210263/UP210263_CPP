@@ -1,36 +1,90 @@
 
-<h1>Unidad II</h1>
-<p>En esta unidad se aplica el uso de algunas estructuras de control</p><br>
-<H3>Actividad 01:</h3> 
-<b>Cálculo de impuestos:</b>Se aplico la estructura de control IF en su forma más simple, con doble condición.
-<p>EL proposito de este pequeño programa es calcular e informar del impuesto que le corresponde a cada usuario dependiendo de su renta anual</p>
-<img src="imagenes/code1.png" >
-<img src="imagenes/code2.png" >
+<h1>Unity II</h1>
+<p>In this unit the use of some control structures is applied.</p><br>
+<H3>Activity 01:</h3> 
+<b>Calculating taxes:</b>The IF control structure was applied in its simplest form, with a double condition.
+<p>The purpose of this small program is to calculate and report the tax that corresponds to each user depending on their annual income</p>
 
-<P>Como se puede observar en el código, se requirieron cinco if, uno por cada categoria en impuestos. Las categorias asignan impuestos según los siguientes estandares:<br>
-  De 5% a los usuarios con rentas menores a $10,000;un impuesto de 15% a usuarios con rentas entre $10,000 y $19,999; un impuesto de 20% a los usuarios cuyas rentas rondan los $20,000 a los $34,999; un impuesto de 30% a usuarios cuyas rentas se encuantran entre los $35,000 y $59,999; y finalmente un impuesto de 60,000 a lus usuarios que debenpagar anualmente $60,000 o más se les asigna un impuesto del 45%.<br>
-Estos if nos sirven para asignarle el porcentaje debido a la renta del usuario y, en realidad, la linea de código que le asigan valor a la variable correspondiente al presupuesto es lo único que se encuentra dentro de los if.
-Fuera de los if se en cuentran, antes de ellos, la declaracion de las tres variables que se requirieron(una para la renta que ingresará el usuario, una para el impuesto que se asigna el en if y una para asignarle el valor económico del impuesto); y después de los if se encuentra el calculo que asinagrá el valor económico mediante la multiplicación de la renta por el porcentaje que le corresponda. Finalmente se impirmen los resultados del impuesto en porcentaje, en dinero y el total a pagar con el impuesto incluido.</P>
+´´´
+int main(){
+
+//Declaration of variables
+   int renta;
+   int impuestoPorcentaje;
+   int impuestoDinero;
+
+//Request information about user
+  cout <<"Enter the value of your rent:  ";
+  cin >> renta;
+  
+
+  //Comparative analysis of the value entered by the user with the different categories
+  //of income to assign the corresponding tax.
+
+
+  if(renta<10000){
+      impuestoPorcentaje=5;
+  }
+
+  if(renta>=10000 && renta<20000){
+      impuestoPorcentaje=15;
+       
+  }
+  if(renta>=20000 && renta<35000){
+      impuestoPorcentaje=20;
+  }
+
+  if(renta>=35000 && renta<60000){
+      impuestoPorcentaje=30;
+  }
+
+  if(renta>=60000){
+      impuestoPorcentaje=45;
+  }´´´
+
+//calculation of the economic value of the tax depending on the user's income.
+impuestoDinero= renta*impuestoPorcentaje/100;
+
+
+//Printing of the results. Informing users that tax is assigned
+// and how much you will have to pay.
+
+cout <<"You have to pay a tax of:  "<<impuestoPorcentaje<< " %";
+cout <<" , therefore the value of your tax is $" << impuestoDinero<<endl;
+cout <<"The total cost to pay is $"<< impuestoDinero+renta<<endl;
+cout <<endl;
+
+return 0;
+}
+
+
+
+
+
+<P>As can be seen in the code, five ifs were required, one for each tax category. The categories assign taxes according to the following standards:<br>
+  From 5% to users with incomes less than $10,000; a 15% tax to users with incomes between $10,000 and $19,999; a 20% tax on users whose income is between $20,000 and $34,999; a 30% tax on users whose income is between $35,000 and $59,999; and finally a tax of 60,000 users who must pay annually $60,000 or more are assigned a tax of 45%.<br>
+These ifs serve us to assign the percentage due to the user's income and, in reality, the line of code that assigns a value to the variable corresponding to the budget is the only thing found within the ifs.
+Outside of the ifs, before them, there is the declaration of the three variables that were required (one for the income that the user will enter, one for the tax that is assigned in the if, and one to assign the economic value of the tax ); and after the if is the calculation that assigns the economic value by multiplying the income by the corresponding percentage. Finally, the results of the tax are printed in percentage, in money and the total to be paid with the tax included.</P>
 <br><br>
-<p>Al correr el código el resultado depende de en que categoria encaje el valor de la renta ingresada. A continuación se encuentran las musetras del resultado que impirmiría el programa ingreasando una renta para cada categoria:</p>
+<p>When running the code, the result depends on which category the entered income value fits into. Below are the samples of the result that the program would print by entering an income for each category:</p>
 
-<h5>1.-Renta < $10,000</h5>
-Asignandole una renta de $8,500<br>
+<h5>1.-Rent < $10,000</h5>
+Assigning a rent of $8,500<br>
 <img src="imagenes/ejmplo8500.png" ><br>
   
-  <h5>2.-Renta < $20,000 pero = ó < $10,000</h5>
-    Asignandole una renta de $10,000<br>
+  <h5>2.-Rent < $20,000 pero = or < $10,000</h5>
+    Assigning an income of $10,000<br>
 <img src="imagenes/ejemplo10000.png" ><br>
     
-  <h5>3.-Renta <  $35,000, pero > ó = $20,000</h5>
-      Asignando una renta de $20,000<br>
+  <h5>3.-Rent <  $35,000, pero > or = $20,000</h5>
+      Assigning an income of $20,000<br>
   <img src="imagenes/ejemplo20000.png" ><br>      
-  <h5> 4.-Renta <  $60,000, pero > ó = $35,000</h5>
-       Asignandole una renta de $36,200<br>
+  <h5> 4.-Rent <  $60,000, pero > or = $35,000</h5>
+      Assigning an income of $36,200<br>
   <img src="imagenes/ejemplo36200.png" ><br>
       
-  <h5>5.-Renta > ó = $60,000</h5>
-       Asignandole una renta de $65,000<br>
+  <h5>5.-Rent > or = $60,000</h5>
+       Assigning an income of $65,000<br>
   <img src="imagenes/ejemplo65000.png" ><br>
 
 <br><br><br>
