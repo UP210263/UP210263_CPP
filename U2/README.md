@@ -5,7 +5,7 @@
 <b>Calculating taxes:</b>The IF control structure was applied in its simplest form, with a double condition.
 <p>The purpose of this small program is to calculate and report the tax that corresponds to each user depending on their annual income</p>
 
-```c+
+```c++
 int main(){
 
   //Declaration of variables
@@ -20,8 +20,10 @@ int main(){
 
   //Comparative analysis of the value entered by the user with the different categories
   //of income to assign the corresponding tax.
+```
+<P> In this first part, variables are declared and the user is asked to enter the cost of their rental</P>
 
-
+```c++
   if(renta<10000){
       impuestoPorcentaje=5;
   }
@@ -44,9 +46,10 @@ int main(){
 
   //calculation of the economic value of the tax depending on the user's income.
   impuestoDinero= renta*impuestoPorcentaje/100;
+```
+<p>Each if does a different process for each of the income categories to assign the value corresponding to the percentage of the tax</P>
 
-
-
+```c++
   cout <<"You have to pay a tax of:  "<<impuestoPorcentaje<< " %";
   cout <<" , therefore the value of your tax is $" << impuestoDinero<<endl;
   cout <<"The total cost to pay is $"<< impuestoDinero+renta<<endl;
@@ -55,7 +58,7 @@ int main(){
 return 0;
 }
 ```
-
+<P> Finally, the results of the calculated tax are shown. </p>
 
 <P>As can be seen in the code, five ifs were required, one for each tax category. The categories assign taxes according to the following standards:<br>
   From 5% to users with incomes less than $10,000; a 15% tax to users with incomes between $10,000 and $19,999; a 20% tax on users whose income is between $20,000 and $34,999; a 30% tax on users whose income is between $35,000 and $59,999; and finally a tax of 60,000 users who must pay annually $60,000 or more are assigned a tax of 45%.<br>
