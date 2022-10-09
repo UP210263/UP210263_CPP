@@ -6,8 +6,7 @@ Description:This code have to do the convertion of any number in decimal sistem 
 */
 #include <iostream>
 #include <stdio.h>
-
-using namespace| std;
+using namespace std;
 
 int main(){
     int numero;
@@ -19,7 +18,7 @@ int main(){
         cin >>numero;
 
         if (numero>0){
-            numero %= resultadoFinal;
+            numero =% resultadoFinal;
             resultadoFinal += resultadoFinal;
 
         }
