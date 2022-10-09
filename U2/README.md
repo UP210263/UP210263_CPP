@@ -59,9 +59,6 @@ return 0;
 ```
 
 
-
-
-
 <P>As can be seen in the code, five ifs were required, one for each tax category. The categories assign taxes according to the following standards:<br>
   From 5% to users with incomes less than $10,000; a 15% tax to users with incomes between $10,000 and $19,999; a 20% tax on users whose income is between $20,000 and $34,999; a 30% tax on users whose income is between $35,000 and $59,999; and finally a tax of 60,000 users who must pay annually $60,000 or more are assigned a tax of 45%.<br>
 These ifs serve us to assign the percentage due to the user's income and, in reality, the line of code that assigns a value to the variable corresponding to the budget is the only thing found within the ifs.
