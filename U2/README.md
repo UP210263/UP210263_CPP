@@ -8,12 +8,12 @@
 ```c+
 int main(){
 
-//Declaration of variables
+  //Declaration of variables
    int renta;
    int impuestoPorcentaje;
    int impuestoDinero;
 
-//Request information about user
+  //Request information about user
   cout <<"Enter the value of your rent:  ";
   cin >> renta;
   
@@ -42,17 +42,15 @@ int main(){
       impuestoPorcentaje=45;
   }
 
-//calculation of the economic value of the tax depending on the user's income.
-impuestoDinero= renta*impuestoPorcentaje/100;
+  //calculation of the economic value of the tax depending on the user's income.
+  impuestoDinero= renta*impuestoPorcentaje/100;
 
 
-//Printing of the results. Informing users that tax is assigned
-// and how much you will have to pay.
 
-cout <<"You have to pay a tax of:  "<<impuestoPorcentaje<< " %";
-cout <<" , therefore the value of your tax is $" << impuestoDinero<<endl;
-cout <<"The total cost to pay is $"<< impuestoDinero+renta<<endl;
-cout <<endl;
+  cout <<"You have to pay a tax of:  "<<impuestoPorcentaje<< " %";
+  cout <<" , therefore the value of your tax is $" << impuestoDinero<<endl;
+  cout <<"The total cost to pay is $"<< impuestoDinero+renta<<endl;
+  cout <<endl;
 
 return 0;
 }
