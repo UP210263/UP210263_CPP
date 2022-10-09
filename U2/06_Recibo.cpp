@@ -1,3 +1,10 @@
+
+/*
+Date:07/10/2022
+Author: Martínez Osiris Olimpia
+email: up210263@alumnos.upa.edu.mx
+Description:
+*/
 #include <iostream>
 #include <stdio.h>
 using namespace std;
