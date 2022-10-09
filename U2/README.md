@@ -5,7 +5,7 @@
 <b>Calculating taxes:</b>The IF control structure was applied in its simplest form, with a double condition.
 <p>The purpose of this small program is to calculate and report the tax that corresponds to each user depending on their annual income</p>
 
-´´´
+```c+
 int main(){
 
 //Declaration of variables
@@ -40,7 +40,7 @@ int main(){
 
   if(renta>=60000){
       impuestoPorcentaje=45;
-  }´´´
+  }
 
 //calculation of the economic value of the tax depending on the user's income.
 impuestoDinero= renta*impuestoPorcentaje/100;
@@ -56,6 +56,7 @@ cout <<endl;
 
 return 0;
 }
+```
 
 
 
