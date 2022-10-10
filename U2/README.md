@@ -91,8 +91,53 @@ Assigning a rent of $8,500<br>
    <p><b>Bonus calculation: </b>The next code have to calculate and show additional bonus for the user. The value of this bonus depend exclusively of note about his work. This notes have three categories: Unacceptable=0.0, Accetable=0.4 and Meritorious=0.6 or greater but smaller than 1. Their bonus will be result of their note by $2,400, that is the maximum value. 
 Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
  <br><br>
-  <img src="imagenes/02/bonoCode1.png"><br>
-  <img src="imagenes/02/bonoCode2.png"><br>
+
+ ```c++
+ int main(){
+//Declaration of variables corresponding to the total of the bonus, the qualification of the employee
+// and the amount of the bonus the employee will receive based on their qualification
+  double calificacionEmpleado;
+  double bono=2400;
+  double bonoAsignado;
+  std::string desempeño;
+
+  //Ask employees for their rating.
+  cout <<"Write your rating:  ";
+  cin >>calificacionEmpleado;
+```
+<p> </p>
+
+```c++
+//Conditional to give or not the bonus, and how much the bonus is assigned according to your qualification
+  if (calificacionEmpleado==0.4 || calificacionEmpleado>=0.6 && calificacionEmpleado<=1|| calificacionEmpleado==0.0 ){
+       bonoAsignado=bono*calificacionEmpleado;//calculation of percentage in bonus money that is assigned to the employee
+       if (calificacionEmpleado==0.4){
+           desempeño=" Acceptable ";
+       }else{
+        if(calificacionEmpleado>=0.6){
+          desempeño=" Meritorious ";
+        }else{
+          desempeño=" Unacceptable ";
+        }
+       }
+       
+       cout <<"His preformance is "<<desempeño<<"You are entitled to a bonus of: $"<<bonoAsignado<<endl;
+       cout <<" "<<endl;
+       //Printing of the bonus assigned to inform the employee
+  }
+```
+
+
+```c++
+  //Assigning a response to any possible invalid value entered by the employee
+  else{
+    cout <<"The grade entered is not valid."<<endl;
+    cout <<" "<<endl;
+  }
+  return 0;
+}
+
+ ```
   <br>
   The possibles worgs are mentionated anteriormente. If user entre 0.0, the answer will be: <br>
   <img src="imagenes/02/inaceplabe.png"><br>
