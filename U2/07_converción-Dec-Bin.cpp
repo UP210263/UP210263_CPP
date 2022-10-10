@@ -7,20 +7,27 @@ Description:This code have to do the convertion of any number in decimal sistem 
 #include <iostream>
 #include <stdio.h>
 using namespace std;
-using :: std string;
+string resultadoFinal;
+    
+    do{
 
+            cout <<"Give me a number: ";
+            cin >>numero;
 
-int main(){
-    int numero;
-    string resultadoFinal;
+            while (numero != 0){
+    
+                 resultadoFinal=(numero%2==0)?"0"+ resultadoFinal:"1"+ resultadoFinal;
+                 numero /=2;
+            }
+            if (numero==0){
+                cout <<"In binary your number is: "<<endl;
+            }else if (numero< 0){
+                cout <<"This caracter is invalid"<<endl;
+            }else 
+                cout <<"The number in binary sistem is: "<<resultadoFinal<<endl;
+    }while (numero<0);
 
-    string toBinary(int n)
-{
-    string r;
-    while (n != 0){
-        r += ( n % 2 == 0 ? "0" : "1" );
-        n /= 2;
-    }
+            cout <<"Finished process"<<endl;
 
     return 0;
 }
