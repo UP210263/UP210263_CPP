@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
     
     for (int contador= 1; contador <= limite; contador++){
 
-        for (int line= 0; line < 20; line++)
+        for (int line= 0; line < 30; line++)
         {
             cout <<"_";
         }
@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
         cout <<endl;
         resultado= constante*contador;
         
-        cout <<"|"<<contador <<"|X| "<<constante<<"|=|"<<resultado<<"|"<<endl;
+        cout <<"|\t"<<contador <<"\t|X|"<<constante<<"\t|=|"<<resultado<<"\t|"<<endl;
 
         
             
