@@ -9,6 +9,9 @@ Description:This code have to do the convertion of any number in decimal sistem 
 using namespace std;
 string resultadoFinal;
     
+    
+    int main(){
+    
     do{
 
             cout <<"Give me a number: ";
