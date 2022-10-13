@@ -1,5 +1,5 @@
 /*
-Date:07/10/2022
+Date:10/10/2022
 Author: Martínez Osiris Olimpia
 email: up210263@alumnos.upa.edu.mx
 Description:This code have to do the convertion of any number in decimal sistem to binary sistem
@@ -13,10 +13,10 @@ string resultadoFinal;
     int main(){
        int numero; 
     
-    do{
+    do{//Starts the cycle to prompt the user for the number at least once 
 
-            cout <<"Give me a number: ";
-            cin >>numero;
+            cout <<"Give me a number: ";//Ask for the number
+            cin >>numero;//read the number
 
             if (numero== 0){
                     resultadoFinal="    0";
@@ -26,7 +26,8 @@ string resultadoFinal;
 
             if (numero > 0){
                 while (numero!=0){ 
-                    resultadoFinal=(numero%2==0)?"0"+ resultadoFinal:"1"+ resultadoFinal;
+                    resultadoFinal=(numero%2==0)?"0"+ resultadoFinal:"1"+ resultadoFinal;//Calculate the number
+                    //in binary and assign to the variable "FinalResult"
                     numero /=2;
                 
                  }
@@ -35,9 +36,9 @@ string resultadoFinal;
                 }
             }
 
-        }while (numero<0);
+        }while (numero<0);//Finish the cycle and the process inside
 
-            cout <<"In binary is: "<<resultadoFinal<<endl;
+            cout <<"In binary is: "<<resultadoFinal<<endl;//Printe the number in binary sistem
             cout <<endl;
 
     return 0;
