@@ -2,7 +2,7 @@
 Date:12/10/2022
 Author: Martínez Osiris Olimpia
 email: up210263@alumnos.upa.edu.mx
-Description:This code have to do the convertion of any number in decimal sistem to binary sistem
+Description:This code have to calculate the multiplication table of any number
 */
 #include <iostream>
 #include <stdio.h>
