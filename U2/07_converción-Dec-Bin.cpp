@@ -21,7 +21,7 @@ string resultadoFinal;
             if (numero== 0){
                     resultadoFinal="    0";
             }else if(numero<0){
-                    cout <<"Character invalid. Try one more time."<<endl;
+                    cout <<"Character invalid. Try again."<<endl;
             }else
 
             if (numero > 0){
