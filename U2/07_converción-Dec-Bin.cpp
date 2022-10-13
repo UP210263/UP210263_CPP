@@ -11,26 +11,35 @@ string resultadoFinal;
     
     
     int main(){
+       int numero; 
     
     do{
 
             cout <<"Give me a number: ";
             cin >>numero;
 
-            while (numero != 0){
-    
-                 resultadoFinal=(numero%2==0)?"0"+ resultadoFinal:"1"+ resultadoFinal;
-                 numero /=2;
-            }
-            if (numero==0){
-                cout <<"In binary your number is: "<<endl;
-            }else if (numero< 0){
-                cout <<"This caracter is invalid"<<endl;
-            }else 
-                cout <<"The number in binary sistem is: "<<resultadoFinal<<endl;
-    }while (numero<0);
+            if (numero== 0){
+                    resultadoFinal="    0";
+            }else if(numero<0){
+                    cout <<"Character invalid. Try one more time."<<endl;
+            }else
 
-            cout <<"Finished process"<<endl;
+            if (numero > 0){
+                while (numero!=0){ 
+                    resultadoFinal=(numero%2==0)?"0"+ resultadoFinal:"1"+ resultadoFinal;
+                    numero /=2;
+                
+                 }
+                 if (numero== 0){
+                    cout <<endl;
+                }
+            }
+
+        }while (numero<0);
+
+            cout <<"In binary is: "<<resultadoFinal<<endl;
+            cout <<endl;
 
     return 0;
-}
+    }
+
