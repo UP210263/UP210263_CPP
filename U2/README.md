@@ -107,12 +107,9 @@ Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
   cout <<"Write your rating:  ";
   cin >>calificacionEmpleado;
 ```
-<p> The conditional is responsible for indicating whether or not the bonus will be given, and how much the bonus will be according to your user rating.
-
- </p>
+<p> The conditional is responsible for indicating whether or not the bonus will be given, and how much the bonus will be according to your user rating.</p>
 
 ```c++
-
   if (calificacionEmpleado==0.4 || calificacionEmpleado>=0.6 && calificacionEmpleado<=1|| calificacionEmpleado==0.0 ){
        bonoAsignado=bono*calificacionEmpleado;//calculation of percentage in bonus money that is assigned to the employee
        if (calificacionEmpleado==0.4){
@@ -124,16 +121,16 @@ Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
           desempeño=" Unacceptable ";
         }
        }
-       ```
-      <p>Finally, the amount of the bonus to receive if one is assigned is shown.<p>
+```
+<p>Finally, the amount of the bonus to receive if one is assigned is shown.</p>
 
-      ```c++
+```c++
        cout <<"His preformance is "<<desempeño<<"You are entitled to a bonus of: $"<<bonoAsignado<<endl;
        cout <<" "<<endl;
        //Printing of the bonus assigned to inform the employee
   }
 ```
-<p>If the user write any invalid number the code print this message<p>
+<p>If the user write any invalid number the code print this message</p>
 
 ```c++
   //Assigning a response to any possible invalid value entered by the employee
