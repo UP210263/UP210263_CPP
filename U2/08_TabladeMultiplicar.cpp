@@ -8,8 +8,7 @@ Description:This code have to calculate the multiplication table of any number
 #include <stdio.h>
 using namespace std;
 
-int main(int argc, char const *argv[])
-{
+int main(){
 //Declaration of variables
     int constante;
     int limite;

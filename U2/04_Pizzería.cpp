@@ -47,7 +47,7 @@ int main(){
             cout << "Choose regular pizza."<<endl;
             cout <<"Now choose the ingredients you want, the options are: "<<endl;
             cout <<"NOTE: All pizzas have motzarella  and tomato."<<endl;//Show the possible ingredients to the user choose
-            cout <<"1.Pepperoni. "<<endl<<"2.Ham. "<<"3.Salmon. "<<endl;
+            cout <<"1.Pepperoni. "<<endl<<"2.Ham. "<<endl<<"3.Salmon. "<<endl;
             cin >>ingredients;
             if (ingredients==1){//Display the ingredients selected
                 cout << "Your regular pizza will be of pepperoni."<<endl;
@@ -65,7 +65,7 @@ int main(){
             
         }
      }else{//If the user write any caracter not valid the program take this option
-        cout << "This caracter is invalid. Try one more time please. ";
+        cout << "This caracter is invalid. Try one more time please. "<<endl;
 
      }
      
