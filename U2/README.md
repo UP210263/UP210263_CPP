@@ -2,7 +2,7 @@
 <h1>Unity II</h1>
 <p>In this unit the use of some control structures is applied.</p><br>
 <H3>Activity 01:</h3> 
-<div align='center'>
+<center> 
 <b>Calculating taxes:</b>The IF control structure was applied in its simplest form, with a double condition.
 <p>The purpose of this small program is to calculate and report the tax that corresponds to each user depending on their annual income</p>
 
@@ -86,11 +86,9 @@ Assigning a rent of $8,500<br>
   <h5>5.-Rent > or = $60,000</h5>
        Assigning an income of $65,000<br>
   <img src="imagenes/01/ejemplo65000.png" ><br>
-</div>
-<br><br><br>
 
+<br><br><br>
 <h3>Activity 02: </h3><BR>
-<div align='center'>
    <p><b>Bonus calculation: </b>The next code have to calculate and show additional bonus for the user. The value of this bonus depend exclusively of note about his work. This notes have three categories: Unacceptable=0.0, Accetable=0.4 and Meritorious=0.6 or greater but smaller than 1. Their bonus will be result of their note by $2,400, that is the maximum value. 
 Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
  <br><br>
@@ -157,10 +155,7 @@ Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
  These are the results corresponding to the accepted performances, but in case of entering a non-accepted number, the following will be sent:<br>
   <img src="imagenes/02/noValida.png">
  <br><br>
-</div>
-
  <h3>Activity 03 </h3>
- <div align='center'>
  <p><b>Cost of your ticket: </b>A company will use this program to automate the payment process to their gaming room. For this reason, the program has the ability to calculate the price that the visitor must pay to enter depending on their age.</p>
 
  ```c++
@@ -215,10 +210,9 @@ cin >>age;
 
 <p>If an unacceptable value is entered, this message will be displayed: </p>
 <img  src="imagenes/03/invalido.png">
-</div>
+
 
  <h3>Activity 04 </h3>
- <div algn='center'>
  <p><b>Choose a pizza: </b>This program is a great option for buy a pizza online.Its purpose is to let the user place his order by showing him a menu with the different options available. The program lets the user choose the ingredients and whether their pizza will be regular or vegetarian.</p>
   
   
@@ -375,10 +369,9 @@ int main(){
   ```
   <p>This last part is responsible for communicating to the client that they entered a number not presented in the main menu</p><br>
   <img src="imagenes/04/invalidoMenuGene.png">
-</div>
 
   <h3>Activity 05 </h3>
-  <div align='center'>
+  
   <p><b>Average temperature:</b>This program is ready for the user to enter 6 temperatures and determine the average of these, in order to present the user with said temperature, the lowest and the highest.</p>
 
   ```c++
@@ -429,9 +422,9 @@ int main(){
  ```
  <p>The result would look like this on the screen: </p>
  <img src="imagenes/05/resultado.png"><br>
-</div>
+
  <h3>Activity 06</h3>
-<div align='center'>
+
 <p><b>Receipt of purchases: </b>This code calcualte the total cost to some products same</p><br>
 
 ```c++
@@ -466,9 +459,9 @@ int main(){
 <img src="imagenes/06/repeticion.png"><br>
 <p>When the user enters "0" to terminate the process, the following should be printed: </p>
 <img src="imagenes/06/cerrar.png"><br><br>
-</div>
+
 <h3>Activity 07</h3>
-<div align='center'>
+
 <p><b>Conversion:</b>This code has the utility of transforming the numbers in the decimal system entered by the user to numbers in the binary system. </p><br>
 
 
@@ -518,9 +511,9 @@ int main(){
 ```
 <p>Finally, the result obtained is printed in the accumulator variable at the end of the process. This result would be displayed as follows:</p>
 <img src="imagenes/07/numBinario.png"><br><br>
-</div>
+
 <h3>Activity 08</h3>
-<div align='center'>
+
 <p><b>Multiplication Tables:</b>Although it might sound simple, this program is not complex because of the calculations it needs but because of its ordered structure within a table that divides the values ​​into categories. </p>
 
 ```c++
@@ -573,7 +566,7 @@ int main(){
 ```
 <p>This last part is responsible for printing the final line that will close the bottom of the table, finally displaying a result like the following: </p>
   <img aling center src="imagenes/08/tablita.png">
-</div>
+
 
     
     
