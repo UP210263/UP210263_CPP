@@ -550,7 +550,7 @@ int main(){
    
       }
 ```
- <p>Aun dentro de el primer FOR secalcula el resultado de la multiplicación del numero ingresado por el usuario por el contador(este debido al ciclo irá aumentando su valor en cada vuelta que haga. Tras obtener el resultado.Se genera la instrucción de imprimir la operación con el acomodo especícico de una tabla de multiplicar.Es decir incluyendo los marcos que los rodean y ordenan, los simbolos de igual y multiplicación y por supuesto los números a multiplicar con su respectivo resultado</p>
+ <p>Even within the first FOR, the result of the multiplication of the number entered by the user by the counter is calculated (this, due to the cycle, will increase its value at each turn it makes. After obtaining the result, the instruction to print the operation with the specific arrangement of a multiplication table. That is, including the frames that surround and order them, the symbols of equals and multiplication and of course the numbers to be multiplied with their respective result</p>
 
 ```c++
 
@@ -563,8 +563,8 @@ int main(){
   }
 
 ```
-<p>Esta ultima parte se encarga de imprimir la linea final que cerrará la parte inferior de la tabla, desplegando fianlmente un resultado como el siguiente: </p>
-  <img aling="center" src="imagenes/08/tablita.png">
+<p>This last part is responsible for printing the final line that will close the bottom of the table, finally displaying a result like the following: </p>
+  <img aling center src="imagenes/08/tablita.png">
 
 
     
