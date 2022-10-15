@@ -92,10 +92,12 @@ Assigning a rent of $8,500<br>
 Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
  <br><br>
 
- ```c++
+ 
+<p>This is the declaration of variables corresponding to the total of the bonus, the qualification of the employee and the amount of the bonus that the employee will receive based on his qualification and and the user is asked to enter his qualification<p>
+
+```c++
  int main(){
-//Declaration of variables corresponding to the total of the bonus, the qualification of the employee
-// and the amount of the bonus the employee will receive based on their qualification
+
   double calificacionEmpleado;
   double bono=2400;
   double bonoAsignado;
@@ -105,10 +107,12 @@ Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
   cout <<"Write your rating:  ";
   cin >>calificacionEmpleado;
 ```
-<p> </p>
+<p> The conditional is responsible for indicating whether or not the bonus will be given, and how much the bonus will be according to your user rating.
+
+ </p>
 
 ```c++
-//Conditional to give or not the bonus, and how much the bonus is assigned according to your qualification
+
   if (calificacionEmpleado==0.4 || calificacionEmpleado>=0.6 && calificacionEmpleado<=1|| calificacionEmpleado==0.0 ){
        bonoAsignado=bono*calificacionEmpleado;//calculation of percentage in bonus money that is assigned to the employee
        if (calificacionEmpleado==0.4){
@@ -120,13 +124,16 @@ Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
           desempeño=" Unacceptable ";
         }
        }
-       
+       ```
+      <p>Finally, the amount of the bonus to receive if one is assigned is shown.<p>
+
+      ```c++
        cout <<"His preformance is "<<desempeño<<"You are entitled to a bonus of: $"<<bonoAsignado<<endl;
        cout <<" "<<endl;
        //Printing of the bonus assigned to inform the employee
   }
 ```
-
+<p>If the user write any invalid number the code print this message<p>
 
 ```c++
   //Assigning a response to any possible invalid value entered by the employee
@@ -139,7 +146,7 @@ Note:Values differents of 0.0,0.4 and 0.6> will be invalid.<p>
 
  ```
   <br>
-  The possibles worgs are mentionated anteriormente. If user entre 0.0, the answer will be: <br>
+ The possible errors mentioned above. If the user enters 0.0, the response will be: <br>
   <img src="imagenes/02/inaceplabe.png"><br>
    and when user enter 0.4 the programm will print:<br>
   <img src="imagenes/02/aceptable.png"><br>
