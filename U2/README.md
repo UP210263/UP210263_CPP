@@ -291,7 +291,7 @@ int main(){
      cin >>choose;
 ```
 <p>The first thing is to declare the variables and show the user the main menu and limits him to choose one of the two available options</p>
-<div aling='center'><img scr="imagenes/04/menuPrincipal.png"> </div>
+<img aling='center' scr="imagenes/04/menuPrincipal.png"> 
 <br>
 
 ```c++
@@ -325,7 +325,7 @@ int main(){
 <p>After the user chooses an ingredient, it is confirmed by printing a message like the following: </p>
 <img src="imagenes/04/pizzaVEG.png"><br>
 <p>If a value not presented is entered, the following message will be displayed: </p>
-<div aling='center'> <img src="imagenes/04/invalidoVEG.png"><br> </div>
+<img aling='center' src="imagenes/04/invalidoVEG.png"><br> 
 
 ```c++
         }else{//If the user didn´t choose a number 1.The process take this way
