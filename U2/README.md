@@ -569,9 +569,9 @@ int main(){
 
 ```
 <p>This last part is responsible for printing the final line that will close the bottom of the table, finally displaying a result like the following: </p>
- <div algn='center'>
-  <img aling='center' src="imagenes/08/tablita.png">
-  </div>
+<div align ="center">
+  <img src="imagenes/08/tablita.png">
+</div>
 
 
     
