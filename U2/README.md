@@ -291,7 +291,7 @@ int main(){
      cin >>choose;
 ```
 <p>The first thing is to declare the variables and show the user the main menu and limits him to choose one of the two available options</p>
-<img align='center' scr="imagenes/04/menuPrincipal.png"> 
+<img align='center' src="imagenes/04/menuPrincipal.png"> 
 <br>
 
 ```c++
