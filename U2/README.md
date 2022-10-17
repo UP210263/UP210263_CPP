@@ -2,7 +2,7 @@
 <h1>Unity II</h1>
 <p>In this unit the use of some control structures is applied.</p><br>
 <div align="center"> 
-<img width="300"  height="50" src="https://i.pinimg.com/originals/07/24/88/0724884440e8ddd0896ff557b75a222a.gif">
+<img width="500"  height="70" src="https://i.pinimg.com/originals/07/24/88/0724884440e8ddd0896ff557b75a222a.gif">
 </div>
 <br><H3>Activity 01:</h3> 
 
