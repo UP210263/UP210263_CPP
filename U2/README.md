@@ -2,7 +2,7 @@
 <h1>Unity II</h1>
 <p>In this unit the use of some control structures is applied.</p><br>
 <H3>Activity 01:</h3> 
-<center> 
+
 <b>Calculating taxes:</b>The IF control structure was applied in its simplest form, with a double condition.
 <p>The purpose of this small program is to calculate and report the tax that corresponds to each user depending on their annual income</p>
 
