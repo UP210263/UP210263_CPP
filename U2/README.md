@@ -310,7 +310,7 @@ int main(){
 
 ```
 <p>If the customer chooses option 1, this path is carried out and shows the available ingredients for the vegan pizzas</p><br>
-<img src="imagenes/04/menuVEG.png"><br>
+<img aling='center' src="imagenes/04/menuVEG.png"><br>
 
 ```c++
                 cout <<"Your vegetarian pizza will be of pepper."<<endl;
@@ -325,7 +325,7 @@ int main(){
 <p>After the user chooses an ingredient, it is confirmed by printing a message like the following: </p>
 <img src="imagenes/04/pizzaVEG.png"><br>
 <p>If a value not presented is entered, the following message will be displayed: </p>
-<img aling='center' src="imagenes/04/invalidoVEG.png"><br> 
+<img  src="imagenes/04/invalidoVEG.png"><br> 
 
 ```c++
         }else{//If the user didn´t choose a number 1.The process take this way
@@ -336,7 +336,7 @@ int main(){
             cin >>ingredients;
 ```
 <p>In the same way, if the user selects option 2, the ingredients for the regular pizza will be shown:</p><br>
-<img src="imagenes/04/menuREG.png"><br>
+<img aling='center'src="imagenes/04/menuREG.png"><br>
 
 
 ```c++
@@ -565,7 +565,7 @@ int main(){
 
 ```
 <p>This last part is responsible for printing the final line that will close the bottom of the table, finally displaying a result like the following: </p>
- <div algn='center'> <img aling center src="imagenes/08/tablita.png"></div>
+ <div algn='center'> <img aling='center' src="imagenes/08/tablita.png"></div>
 
 
     
