@@ -291,7 +291,7 @@ int main(){
      cin >>choose;
 ```
 <p>The first thing is to declare the variables and show the user the main menu and limits him to choose one of the two available options</p>
-<img align='center' src="imagenes/04/menuPrincipal.png"> 
+<img  src="imagenes/04/menuPrincipal.png"> 
 <br>
 
 ```c++
@@ -310,7 +310,7 @@ int main(){
 
 ```
 <p>If the customer chooses option 1, this path is carried out and shows the available ingredients for the vegan pizzas</p><br>
-<img align='center' src="imagenes/04/menuVEG.png"><br>
+<img align="center" src="imagenes/04/menuVEG.png"><br>
 
 ```c++
                 cout <<"Your vegetarian pizza will be of pepper."<<endl;
@@ -336,7 +336,7 @@ int main(){
             cin >>ingredients;
 ```
 <p>In the same way, if the user selects option 2, the ingredients for the regular pizza will be shown:</p><br>
-<img align='center'src="imagenes/04/menuREG.png"><br>
+<img align="center"  src="imagenes/04/menuREG.png"><br>
 
 
 ```c++
