@@ -1,5 +1,5 @@
 /*
-Date:28/09/2022
+Date:20/10/2022
 Author: Martínez Osiris Olimpia
 email: up210263@alumnos.upa.edu.mx
 Description: This code print the maximum value using a different funtion than main.
