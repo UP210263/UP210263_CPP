@@ -1,5 +1,5 @@
 /*
-Date:12/10/2022
+Date:20/10/2022
 Author: Martínez Osiris Olimpia
 email: up210263@alumnos.upa.edu.mx
 Description:This code have to calculate the multiplication table of any number
