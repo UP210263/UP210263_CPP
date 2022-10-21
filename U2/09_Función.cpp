@@ -4,55 +4,87 @@ Author: Martínez Osiris Olimpia
 email: up210263@alumnos.upa.edu.mx
 Description:This code have to calculate the multiplication table of any number
 */
+
 #include <iostream>
-#include <stdio.h>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
+
 float calcularFuncion(float x){
-    return pow(x,2)+x-6;
+    return pow(x,2)-(3*x)-12;
 }
+
+
 
 int main(){
-    float numberA;
-    float numberB;
-    float numberC=(numberA+numberB)/2;
-    float error=0.01;
+    int cont=1;
+    float numA,numB,numC,yA,yB,yC;
+    cout << "Give me a number for 'A': ";
+    cin >> numA;
+    cout << "Give me a number for 'B': ";
+    cin >> numB;
+    numC= (numA+numB)/2;
+    yA= calcularFuncion(numA);
+    yB= calcularFuncion(numB);
+    yC= calcularFuncion(numC);
+    
+     for (int i=0; i<120; i++){
+        cout<< "_";
+    }
 
-    cout << "Give the number 'A': " ;
-    cin >>numberA;
-    cout << "Give the number 'B': " ;
-    cin >>numberB;
-
-    cout <<"|\t Number A\t|\tNumber B\t|\tNumber C\t|\tY a\t|\tY b\t|\tY c\t|"<<endl;
-    do
+    cout<< "\n";
+    
+    if ((yB>0 && yA<0) || (yA>0 && yB<0)){
+    cout<< "|\t NUMBER\t|\t NUMBER A\t|\tNUMBER B\t|\t NUMBER C \t|\t F(A)\t\t|\t F(B) \t\t|\t F(C) \t\t| \n";
+   
+    for (int i=0; i<120; i++){
+        cout<< "_";
+    }
+    
+    cout<< "\n";
+    
+    cout<< "| \t" << cont << "\t|\t" << fixed << setprecision(3) <<numA<< "\t|\t" << numB<< "\t|\t" <<numC << "\t|\t" << yA << "\t\t|\t" << yB << "\t\t|\t" << yC << "\t\t|\n"; 
+    
+    for (int i=0; i<120; i++)
     {
-        float yA=calcularFuncion(numberA);
-        float yB=calcularFuncion(numberB);
-        float yC=calcularFuncion(numberC);
+        cout<< "_";
+    }
+    cout<< "\n";
 
-        if (numberA*numberC<0){
-            numberB=numberC;
-        }else if (numberC*numberB<0){
-            numberA=numberC;
-        }else{
-            cout <<"Invalid entry";
-        }
-        for (int line= 0; line < 115; line++){
-            cout <<"_";
-        }
-        cout <<endl;
-        for (int line= 0; line < 115; line++){
-            cout <<"_";
-        }
-        cout <<endl;
-        cout <<"|\t"<<numberA<<"\t|\t"<<numberB<<"\t|\t"<<numberC<<"\t|\t"<<yA<<"\t|\t"<<yB<<"\t|\t"<<yC<<"\t|"<<endl;
-        for (int line= 0; line < 115; line++){
-            cout <<"_";
-        }
-        cout <<endl;
-    } while (abs(numberC)>= error);
+        while (yC>=0.01 || yC<=-0.01)
+        {
+            if ((yC>0 && yA<0) || (yA>0 && yC<0))
+            {
+                numB= numC;
+            }
+            else
+            {
+                numA=numC;
+            }
+            
+             numC= (numA+numB)/2;
+            yA= calcularFuncion(numA);
+            yB= calcularFuncion(numB);
+            yC= calcularFuncion(numC);
+            
+            cont++;
 
+            cout<< "| \t" <<cont<< "\t|\t" << fixed << setprecision(3) <<numA<< "\t|\t"<<numB<<"\t|\t"<<numC<<"\t|\t"<< yA << "\t\t|\t" << yB << "\t\t|\t" << yC << "\t\t|\n";
 
+            for (int i = 0; i <120; i++)
+            {
+                cout<< "_";
+            }
+            cout<< "\n";
+        }
+    cout<< "The root of this function is around: "<< setprecision(1) <<numC<<"__"<<endl;
+    }
+    else
+    {
+        cout << "There's no root between the numbers. "<<endl;
+    }
     return 0;
 }
+
+
