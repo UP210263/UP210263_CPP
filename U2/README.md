@@ -580,16 +580,16 @@ int main(){
 <h3>Activity 09</h3>
 
 <p><b> Use of functions: </b> With this simple program we begin to use the functions in the programming. The functions are segments of code which will serve in any part of the program repeating the same process as many times as required, without the need to rewrite that part of the code. These must have a name to call them through it in the main function.</p><br>
-<p>Nuestra funcion es esta: </p><br>
+<p>Our function is this: </p><br>
 
 ```c++
   float calcularFuncion(float x){
       return pow(x,2)-(3*x)-12;
   }
 ```
-<P>La finalidad de esta es resolver una ecuación especifica, en este caso esta "x^2-3x-12". </P><br>
+<P>The purpose of this is to solve a specific equation, in this case it is "x^2-3x-12". </P><br>
 
-<p>En la función main se llama nombrandola y asignandole valores en repetidas ocaciones: <p><br>
+<p>In the main function it is called by naming it and assigning values ​​to it repeatedly: <p><br>
 
 ```c++
 int main(){
@@ -609,7 +609,7 @@ int main(){
     }
 
 ```
-<p>Después de llamarla y asignarle valores, solo resta imprimir los resultados en una tabla que muestre las raices de pertenecientes a la finción que se esta resolviendo.</p><br>
+<p>After calling it and assigning values ​​to it, it only remains to print the results in a table that shows the roots of belonging to the function that is being solved.</p><br>
 
 ```c++
  if ((yB>0 && yA<0) || (yA>0 && yB<0)){
@@ -665,10 +665,10 @@ int main(){
 }
 
 ```
-<p> El resultado de la función se despliega al final tras mostrar la tabla con los diversos resultados obtenidos antes de llegar a la raíz.</p>
+<p> The result of the function is displayed at the end after displaying the table with the various results obtained before reaching the root.</p>
 <div align="center"><img  src="imagenes/09/tabla_raiz.png"><br> </div>
 
-<p> Si resulta que la los valores que se ingresan no brindan una raíz , se imprimirá: </p><br>
+<p>If it turns out that the values ​​being entered do not provide a root , it will print: </p><br>
 
 <img src="imagenes/09/sin_raiz.png">
 
