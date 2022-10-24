@@ -579,7 +579,102 @@ int main(){
 
 <h3>Activity 09</h3>
 
-<p><b>
+<p><b> Use of functions: </b> With this simple program we begin to use the functions in the programming. The functions are segments of code which will serve in any part of the program repeating the same process as many times as required, without the need to rewrite that part of the code. These must have a name to call them through it in the main function.</p><br>
+<p>Nuestra funcion es esta: </p><br>
+
+```c++
+  float calcularFuncion(float x){
+      return pow(x,2)-(3*x)-12;
+  }
+```
+<P>La finalidad de esta es resolver una ecuación especifica, en este caso esta "x^2-3x-12". </P><br>
+
+<p>En la función main se llama nombrandola y asignandole valores en repetidas ocaciones: <p><br>
+
+```c++
+int main(){
+    int cont=1;
+    float numA,numB,numC,yA,yB,yC;
+    cout << "Give me a number for 'A': ";
+    cin >> numA;
+    cout << "Give me a number for 'B': ";
+    cin >> numB;
+    numC= (numA+numB)/2;
+    yA= calcularFuncion(numA);
+    yB= calcularFuncion(numB);
+    yC= calcularFuncion(numC);
+    
+     for (int i=0; i<120; i++){
+        cout<< "_";
+    }
+
+```
+<p>Después de llamarla y asignarle valores, solo resta imprimir los resultados en una tabla que muestre las raices de pertenecientes a la finción que se esta resolviendo.</p><br>
+
+```c++
+ if ((yB>0 && yA<0) || (yA>0 && yB<0)){
+    cout<< "|\t NUMBER\t|\t NUMBER A\t|\tNUMBER B\t|\t NUMBER C \t|\t F(A)\t\t|\t F(B) \t\t|\t F(C) \t\t| \n";
+   
+    for (int i=0; i<120; i++){
+        cout<< "_";
+    }
+    
+    cout<< "\n";
+    
+    cout<< "| \t" << cont << "\t|\t" << fixed << setprecision(3) <<numA<< "\t|\t" << numB<< "\t|\t" <<numC << "\t|\t" << yA << "\t\t|\t" << yB << "\t\t|\t" << yC << "\t\t|\n"; 
+    
+    for (int i=0; i<120; i++)
+    {
+        cout<< "_";
+    }
+    cout<< "\n";
+
+        while (yC>=0.01 || yC<=-0.01)
+        {
+            if ((yC>0 && yA<0) || (yA>0 && yC<0))
+            {
+                numB= numC;
+            }
+            else
+            {
+                numA=numC;
+            }
+            
+             numC= (numA+numB)/2;
+            yA= calcularFuncion(numA);
+            yB= calcularFuncion(numB);
+            yC= calcularFuncion(numC);
+            
+            cont++;
+
+            cout<< "| \t" <<cont<< "\t|\t" << fixed << setprecision(3) <<numA<< "\t|\t"<<numB<<"\t|\t"<<numC<<"\t|\t"<< yA << "\t\t|\t" << yB << "\t\t|\t" << yC << "\t\t|\n";
+
+            for (int i = 0; i <120; i++)
+            {
+                cout<< "_";
+            }
+            cout<< "\n";
+        }
+    cout<< "The root of this function is around: "<< setprecision(1) <<numC<<"__"<<endl;
+    }
+    else
+    {
+        cout << "There's no root between the numbers. "<<endl;
+    }
+    return 0;
+}
+
+```
+<p> El resultado de la función se despliega al final tras mostrar la tabla con los diversos resultados obtenidos antes de llegar a la raíz.</p>
+<div align="center"><img  src="imagenes/09/tabla_raiz.png"><br> </div>
+
+<p> Si resulta que la los valores que se ingresan no brindan una raíz , se imprimirá: </p><br>
+
+<img src="imagenes/09/sin_raiz.png">
+
+
+
+
     
     
   
