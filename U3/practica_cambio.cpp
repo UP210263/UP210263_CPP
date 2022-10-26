@@ -8,8 +8,8 @@ Description:This program have to break down in exchange for Mexican bills and co
 #include <stdio.h>
 using namespace std;
 
-int desglosarCambio(int);
-void imprimirCambio(string);
+void desglosarCambio(int);
+
 
 int quini=0, doci=0, cien=0, cincuenta=0, veinte=0, diez=0, cinco=0, dos=0, uno=0;
 
@@ -24,12 +24,12 @@ int main (){
 
 }
 
-int desglosarCambio (int cantidad){
+void desglosarCambio (int cantidad){
     int billete;
     int residuo;
     int cantidadPrint;
     do{
-        for (int cont=1; cont<11; cont++){
+        for (int cont=1; cont<10; cont++){
             if (cont==1){
                 billete=500;
             }else  if (cont==2){
@@ -41,22 +41,18 @@ int desglosarCambio (int cantidad){
             }else  if (cont==5){
                 billete=20;
             }else  if (cont==6){
-                billete=20;
-            }else  if (cont==7){
                 billete=10;
-            }else  if (cont==8){
+            }else  if (cont==7){
                 billete=5;
-            }else  if (cont==9){
+            }else  if (cont==8){
                 billete=2;
-            }else  if (cont==10){
+            }else  if (cont==9){
                 billete=1;
-            }else { 
-                cout <<"Number invalid ";
             }
 
             if (cantidad%billete==0){
                cantidadPrint=cantidad/billete; 
-               cantidad=cantidad;
+              
             }else {
                 cantidadPrint=cantidad/billete;
                 residuo=cantidad%billete;
@@ -66,5 +62,5 @@ int desglosarCambio (int cantidad){
         }
 
     }while (cantidad%billete != 0);
- return 0;   
+ 
 }
