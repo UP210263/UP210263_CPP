@@ -52,15 +52,15 @@ void desglosarCambio (int cantidad){
 
             if (cantidad%billete==0){
                cantidadPrint=cantidad/billete; 
-              
+              cantidad=0;
             }else {
                 cantidadPrint=cantidad/billete;
                 residuo=cantidad%billete;
                 cantidad=residuo;
             }
-            cout <<"$"<<billete<<"---\t"<<cantidadPrint<<endl;
+            cout <<"$"<<billete<<"\t---\t"<<cantidadPrint<<endl;
         }
 
     }while (cantidad%billete != 0);
- 
+    cout <<endl;
 }
