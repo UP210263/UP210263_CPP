@@ -11,6 +11,10 @@ using namespace std;
 
 int conjuntos[8][8];
 
+void ingresarValores();
+
+void imprimirValores();
+
 int main(){
     ingresarValores();
     imprimirValores();
