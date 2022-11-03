@@ -68,3 +68,4 @@ void crearEstructura (){
  void mostrarJugadas(){
 
  }
+}
