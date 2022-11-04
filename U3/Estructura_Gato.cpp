@@ -9,26 +9,27 @@ Description:This program have to break down in exchange for Mexican bills and co
 using namespace std;
 
 void crearEstructura();
- void mostrarJugadas();
+void mostrarJugadas();
+int seleccionarJugada();
 
-char estructura_Gato[11][11];
-/*char pocisionesJugadas[11][11]={ 
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
-{' ','1',' ',' ',' ','2',' ',' ','3',' ',' '},
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
-{' ','4',' ',' ',' ','5',' ',' ','6',' ',' '},
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
-{' ','7',' ',' ',' ','8',' ',' ','9',' ',' '},
-{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '}};
-*/
+char estructura_Gato[11][11]={{' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                              {' ','1',' ',' ',' ','2',' ',' ','3',' ',' '},
+                              {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                              {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                                {' ','4',' ',' ',' ','5',' ',' ','6',' ',' '},
+                                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                                {' ','7',' ',' ',' ','8',' ',' ','9',' ',' '},
+                                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '}};
+char pocisionesJugadas[3][3]={{'1','2','3'},
+                              {'4','5','6'},
+                              {'7','8','9'}, };
 
 int main(){
     crearEstructura();
-    
+    seleccionarJugada();
 
 }
 
@@ -56,16 +57,23 @@ void crearEstructura (){
                 cout<<"|";
             }else if ((fila%2!=0)&&(col!=3||col!=7)){
                 cout<<"          ";
-            //}else if((fila==1||fila==5||fila==9)&&(col==1||col==5||col==9)){
-              //  cout <<"X";
-           // } 
+            }else if((fila==1||fila==5||fila==9)&&(col==1||col==5||col==9)){
+              cout <<"X";
+           } 
               
         }
       cout<<endl;
     }
 }
 
- void mostrarJugadas(){
+ void mostrarJugada(){
 
  }
+int seleccionarJugada(){
+    int jugada;
+    do{
+        cout<<"Chose the option that you want: ";
+        cin>>jugada;
+    }while (jugada<=9 && jugada>0);
+    return jugada;
 }
