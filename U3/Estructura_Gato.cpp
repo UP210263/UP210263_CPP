@@ -5,7 +5,7 @@ email: up210263@alumnos.upa.edu.mx
 Description:This program have to break down in exchange for Mexican bills and coins an amount entered by the user
 */
 
-
+/* 
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -25,13 +25,6 @@ int fila,col;
 int vuelta=0;
 int jugada;
 char jugador;
-
-int main(){
-    crearEstructura();
-    //seleccionarJugada();
-    cout <<tablero[1][1]<<endl;
-
-}
 
     
 void crearEstructura (){
@@ -73,35 +66,148 @@ int seleccionarJugada(){
     return jugada;
 }
 
-void registrarPocision(){
-    
-    pocisionesJugadas[1][1]=(jugada=='1')?jugador:
-    
-    pocisionesJugadas[1][5]=(jugada=='2')?jugador:
-    
-    pocisionesJugadas[1][9]=(jugada=='3')?jugador:
-    
-    pocisionesJugadas[5][1]=(jugada=='4')?jugador:
-    
-    pocisionesJugadas[5][5]=(jugada=='5')?jugador:
-    
-    pocisionesJugadas[5][9]=(jugada=='6')?jugador:
-    
-    pocisionesJugadas[9][1]=(jugada=='7')?jugador:
-    
-    pocisionesJugadas[9][5]=(jugada=='8')?jugador:
-    
-    pocisionesJugadas[9][9]=(jugada=='9')?jugador:' ';
-    
-    
+*/
+
+#include <iostream>
+
+using namespace std;
+
+void Tablero(int);
+int TurnoJugador = 1;
+char    espacioJuego[3][3] = {{'1', '2', '3'},
+                              {'4', '5', '6'},
+                              {'7', '8', '9'}};
+int SeleccionarJugada();
+void ReemplazarCasilla(int Jugada);
+bool ComprobarJugadaOcupada(int Jugada);
+void ModoDeJuego(int);
+bool identificarGanador(int Jugada);
+
+
+int main(){
+    int tablero, jugador1, jugador2, computadora, jugada;
+    bool casillaocupada = true, ganador = false;
+    Tablero(tablero);
+    do
+    {
+        jugada = SeleccionarJugada();
+        casillaocupada = ComprobarJugadaOcupada(jugada);
+        if (casillaocupada == true)
+        {
+            do
+            {
+                cout << "Casilla invalida, elija otra\n";
+                break;
+            } while (casillaocupada == true);
+        }
+        else if (casillaocupada == false)
+        {
+            system("clear");
+            ReemplazarCasilla(jugada);
+            Tablero(tablero);
+            TurnoJugador++;
+        }
+    ganador = VerificarGanador(ganador);
+    } while (ganador == false);
+    if (TurnoJugador % 2 == 0)
+    {
+        cout << "Gano el jugador 1";
+    }
+    else
+    {
+        cout << "Gano el jugador 2";
+    }
+
+    return 0;
 }
 
- char turno (){
-    char jugador=(vuelta%2==0)?'X':'O';
-     return jugador;
- }
 
 
+
+int SeleccionarJugada(){
+    int Jugada;
+    do
+    {
+        cout << "Dame tu jugada: \n";
+        cin >> Jugada;
+    } while (Jugada < 0 && Jugada >= 9);
+
+    return Jugada;
+}
+
+
+
+
+bool ComprobarJugadaOcupada(int Jugada){
+    int row = Jugada / 10, col = Jugada - 1;
+    if (espacioJuego[row][col] == 'X' || espacioJuego[row][col] == 'O'){
+        return true; // Significa que la casilla esta ocupada
+    }else{
+        return false;
+    }
+}
+
+
+
+
+
+void ReemplazarCasilla(int Jugada){
+    if (TurnoJugador % 2 == 0){
+        int row = Jugada / 10, col = Jugada - 1;
+        espacioJuego[row][col] = 'O';
+    }else{
+        int row = Jugada / 10, col = Jugada - 1;
+        espacioJuego[row][col] = 'X';
+    }
+}
+
+
+
+
+
+void Tablero(int){
+    int x = 0, y = 0;
+    for (int fila = 0; fila < 5; fila++){
+        for (int columna = 0; columna < 9; columna++){
+            if (fila == 1 || fila == 3){
+                cout << "-";
+            }else if (columna == 1 || columna == 4 || columna == 7){
+                cout << espacioJuego[x][y];
+                y++;
+            }else{
+                cout << " ";
+            }
+            if (columna == 2 || columna == 5){
+                cout << "|";
+            }
+        }
+        cout << "\n";
+        if (fila % 2 == 0){
+            x++;
+        }
+        y = 0;
+    }
+}
+
+
+
+bool identificarGanador(int Jugada){
+    int punto = 0;
+    bool VerificarGanador = false;
+    for (int  posicion = 0; posicion < 3; posicion++){
+        if ((espacioJuego[0][posicion] == espacioJuego[1][posicion]) && (espacioJuego[0][posicion] == AreaJuego[2][posicion])){
+            identificarGanador = true;
+            break;
+        }
+        else if ((espacioJuego[posicion][0] == espacioJuego[posicion][1]) && (espacioJuego[posicion][0] == AreaJuego[posicion][2]))
+        {
+            identificarGanador = true;
+            break;
+        }
+    }
+    return identificarGanador;
+}
+//Footer
 bool determinarTriunfo(){
     bool hayGanador;
 
@@ -119,4 +225,7 @@ bool determinarTriunfo(){
     }
     
 }
+
+
+
 
