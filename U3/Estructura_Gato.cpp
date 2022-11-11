@@ -79,24 +79,23 @@ char espacioJuego[3][3] = {{'1', '2', '3'},
                            {'7', '8', '9'}};
 int seleccionarJugada();
 void reescribirCasilla(int jugada);
-bool comprobarJugadaOcupada(int jugada);
+bool comprobarCasillaOcupada(int jugada);
 void modoJuego(int);
 bool identificarGanador(int jugada);
 
 
 int main(){
-    int tablero, jugador1, jugador2, computadora, jugada,player;
+    int tablero, jugador1, jugador2, jugada,player;
     bool casillaOcupada = true, ganador = false;
     ttablero(tablero);
     do
     {
         jugada = seleccionarJugada();
-        casillaOcupada = comprobarJugadaOcupada(jugada);
+        casillaOcupada = comprobarCasillaOcupada(jugada);
         if (casillaOcupada == true)
         {
-            do
-            {
-                cout << "Casilla invalida, elija otra\n";
+            do{
+                cout << "Casilla invalida, elija otra"<<endl;
                 break;
             } while (casillaOcupada == true);
         }
@@ -106,14 +105,15 @@ int main(){
             ttablero(tablero);
             turnoJugador++;
         }
-    ganador = identificarGanador(ganador);
+        ganador = identificarGanador(ganador);
     } while (ganador == false);
+    
     if (turnoJugador % 2 == 0){
         player=1;
     }else{
         player=2;
     }
-    cout<< "Player "<< player<<" is the winner"<<endl;
+    cout<< "Player "<<player<<" is the winner"<<endl;
     return 0;
 }
 
@@ -176,7 +176,7 @@ void ttablero(int){
                 cout << "|";
             }
         }
-        cout << "\n";
+        cout <<endl;
         if (fila % 2 == 0){
             x++;
         }
@@ -200,27 +200,10 @@ bool identificarGanador(int Jugada){
             break;
         }
     }
-    return identificarGanador;
+    return verificarGanador;
 }
 
-/*bool determinarTriunfo(){
-    bool hayGanador;
 
-    if(ttablero[1][1]!=' ' && ttablero[1][5]==ttablero[1][9] && ttablero[1][9]==ttablero[1][1]){
-        hayGanador=true;
-    }else if (tablero[5][1]!=' ' && tablero[5][5]==tablero[5][9] && tablero[5][9]==ttablero[5][1])
-    {
-        hayGanador=true;
-    }else if (tablero[9][1]!=' ' && tablero[9][5]==tablero[9][9] && ttablero[9][9]==ttablero[9][1])
-    {
-        hayGanador=true;
-    }else if (tablero[1][1]!=' ' && tablero[5][1]==tablero[9][1] && tablero[9][1]==tablero[1][1])
-    {
-        hayGanador=true;
-    }
-    
-}
-*/
-
+  
 
 
