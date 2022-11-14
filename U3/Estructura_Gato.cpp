@@ -35,7 +35,7 @@ int main()
         cin >> numJugadores;
         if (numJugadores == 1)
         {
-            cout<<"You are the player 1 and the PC is the player 2."
+            cout<<"You are the player 1 and the PC is the player 2."<<endl;
             jugarGato(numJugadores);
          
         }
