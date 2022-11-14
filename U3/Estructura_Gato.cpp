@@ -5,7 +5,6 @@ email: up210263@alumnos.upa.edu.mx
 Description:This program have to break down in exchange for Mexican bills and coins an amount entered by the user
 */
 
-
 #include <iostream>
 #include <stdio.h>
 #include <time.h>
@@ -13,7 +12,7 @@ Description:This program have to break down in exchange for Mexican bills and co
 using namespace std;
 
 void ttablero(int);
-int turnoJugador = 1,jugada;
+int turnoJugador = 1, jugada;
 char espacioJuego[3][3] = {{'1', '2', '3'},
                            {'4', '5', '6'},
                            {'7', '8', '9'}};
@@ -23,181 +22,205 @@ bool comprobarCasillaOcupada(int);
 bool identificarGanador(int);
 int obtenerJugada();
 int obtenerMejorJugada();
+void jugarGato(int);
 
-
-
-int main(){
-    int tablero, jugada,player,numJugadores;
+int main()
+{
+    int tablero, jugada, player, numJugadores;
     string resultado;
     bool casillaOcupada = true, ganador = false;
-    do{ 
-    cout<<"Choose the play mode: 1.-1 player  or 2.-2 players "<<endl;
-    cin>>numJugadores;
-    if (numJugadores==1){ 
-        ttablero(tablero);
-       do{ 
-       if (turnoJugador%2!=0){ 
-    
-             jugada = seleccionarJugada();
-             casillaOcupada = comprobarCasillaOcupada(jugada);
-            if (casillaOcupada == true){
-                 do{
-                     cout << "Try again,his place is invalid "<<endl;
-                     break;
-                 } while (casillaOcupada == true);
-            }else if (casillaOcupada == false){
-                system("clear");
-                reescribirCasilla(jugada);
-                ttablero(tablero);
-                turnoJugador++;
-            } 
-       }else{
-            jugada=obtenerJugada();
-        
-            casillaOcupada = comprobarCasillaOcupada(jugada);
-            if (casillaOcupada == true){
-                 do{
-                     cout << "Try again,his place is invalid "<<endl;
-                     break;
-                 } while (casillaOcupada == true);
-            }else if (casillaOcupada == false){
-                system("clear");
-                reescribirCasilla(jugada);
-                ttablero(tablero);
-                turnoJugador++;
-       }     
-
-                ganador = identificarGanador(ganador);
-        } while (ganador == false);
-    
-        if (turnoJugador % 2 == 0){
-            resultado="Winner";
-        }else{
-            resultado="Loser";
+    do
+    {
+        cout << "Choose the play mode: 1.-1 player  or 2.-2 players " << endl;
+        cin >> numJugadores;
+        if (numJugadores == 1)
+        {
+            cout<<"You are the player 1 and the PC is the player 2."
+            jugarGato(numJugadores);
+         
         }
-        cout<< "You are  the "<<resultado<<endl;
-        return 0;
-       
-    } while (ganador == false);
-   
-    }else if (numJugadores==2){
-        ttablero(tablero);
-         do{
-             jugada = seleccionarJugada();
-             casillaOcupada = comprobarCasillaOcupada(jugada);
-            if (casillaOcupada == true){
-                 do{
-                     cout << "Try again,his place is invalid "<<endl;
-                     break;
-                 } while (casillaOcupada == true);
-            }else if (casillaOcupada == false){
-                system("clear");
-                reescribirCasilla(jugada);
-                ttablero(tablero);
-                turnoJugador++;
-            }
+        else if (numJugadores == 2)
+        {
+            ttablero(tablero);
+            do
+            {
+                jugada = seleccionarJugada();
+                casillaOcupada = comprobarCasillaOcupada(jugada);
+                if (casillaOcupada == true)
+                {
+                    do
+                    {
+                        cout << "Try again,his place is invalid " << endl;
+                        break;
+                    } while (casillaOcupada == true);
+                }
+                else if (casillaOcupada == false)
+                {
+                    system("clear");
+                    reescribirCasilla(jugada);
+                    ttablero(tablero);
+                    turnoJugador++;
+                }
                 ganador = identificarGanador(ganador);
             } while (ganador == false);
-    
-        if (turnoJugador % 2 == 0){
-            player=1;
-        }else{
-            player=2;
-        }
-        cout<< "Player "<<player<<" is the winner"<<endl;
-        return 0;
 
-        }else{
-        cout<<"This character is invalid, try again"<<endl;
+            if (turnoJugador % 2 == 0)
+            {
+                player = 1;
+            }
+            else
+            {
+                player = 2;
+            }
+            cout << "Player " << player << " is the winner" << endl;
+            return 0;
         }
-    }while(numJugadores!=1 && numJugadores!=2);   
+        else
+        {
+            cout << "This character is invalid, try again" << endl;
+        }
+    } while (numJugadores != 1 && numJugadores != 2);
 }
 
+void jugarGato(int jugadores)
+{
+    int tablero, jugada, player, numJugadores;
+    string resultado;
+    bool casillaOcupada = true, ganador = false;
+    ttablero(tablero);
+            do
+            {
+                jugada = seleccionarJugada();
+                casillaOcupada = comprobarCasillaOcupada(jugada);
+                if (casillaOcupada == true)
+                {
+                    do
+                    {
+                        cout << "Try again,his place is invalid " << endl;
+                        break;
+                    } while (casillaOcupada == true);
+                }
+                else if (casillaOcupada == false)
+                {
+                    system("clear");
+                    reescribirCasilla(jugada);
+                    ttablero(tablero);
+                    turnoJugador++;
+                }
+                ganador = identificarGanador(ganador);
+            } while (ganador == false);
+
+            if (turnoJugador % 2 == 0)
+            {
+                player = 1;
+            }else{
+                player = 2;
+            }
+            cout << "Player " << player << " is the winner" << endl;
+           // return 0;
+            //else{
+                cout << "This character is invalid, try again" << endl;
+            } //while (ganador == false);
+//}
 
 
 
-int seleccionarJugada(){
+int seleccionarJugada()
+{
     int jugada;
-    do{
+    do
+    {
         cout << "Chose a place: \n";
         cin >> jugada;
     } while (jugada < 0 && jugada >= 9);
 
     return jugada;
-
 }
 
-
-
-
-bool comprobarCasillaOcupada(int jugada){
+bool comprobarCasillaOcupada(int jugada)
+{
     int row = jugada / 10, col = jugada - 1;
-    if (espacioJuego[row][col] == 'X' || espacioJuego[row][col] == 'O'){
-        return true; 
-    }else{
+    if (espacioJuego[row][col] == 'X' || espacioJuego[row][col] == 'O')
+    {
+        return true;
+    }
+    else
+    {
         return false;
     }
 }
 
-
-
-
-void reescribirCasilla(int jugada){
-    if (turnoJugador % 2 == 0){
+void reescribirCasilla(int jugada)
+{
+    if (turnoJugador % 2 == 0)
+    {
         int row = jugada / 10, col = jugada - 1;
         espacioJuego[row][col] = 'O';
-    }else{
+    }
+    else
+    {
         int row = jugada / 10, col = jugada - 1;
         espacioJuego[row][col] = 'X';
     }
 }
 
-
-
-
-
-void ttablero(int){
+void ttablero(int)
+{
     int fi = 0, co = 0;
-    for (int fila = 0; fila < 5; fila++){
-        for (int columna = 0; columna < 9; columna++){
-            if (fila == 1 || fila == 3){
+    for (int fila = 0; fila < 5; fila++)
+    {
+        for (int columna = 0; columna < 9; columna++)
+        {
+            if (fila == 1 || fila == 3)
+            {
                 cout << "_";
-            }else if (columna == 1 || columna == 4 || columna == 7){
+            }
+            else if (columna == 1 || columna == 4 || columna == 7)
+            {
                 cout << espacioJuego[fi][co];
                 co++;
-            }else{
+            }
+            else
+            {
                 cout << " ";
             }
-            if (columna == 2 || columna == 5){
+            if (columna == 2 || columna == 5)
+            {
                 cout << "|";
             }
         }
-        cout <<endl;
-        if (fila % 2 == 0){
+        cout << endl;
+        if (fila % 2 == 0)
+        {
             fi++;
         }
         co = 0;
     }
-    cout<<endl;
+    cout << endl;
 }
 
-
-
-
-bool identificarGanador(int Jugada){
+bool identificarGanador(int Jugada)
+{
     bool verificarGanador = false;
-    for (int  posicion = 0; posicion < 3; posicion++){
-        if ((espacioJuego[0][posicion] == espacioJuego[1][posicion]) && (espacioJuego[0][posicion] == espacioJuego[2][posicion])){
+    for (int posicion = 0; posicion < 3; posicion++)
+    {
+        if ((espacioJuego[0][posicion] == espacioJuego[1][posicion]) && (espacioJuego[0][posicion] == espacioJuego[2][posicion]))
+        {
             verificarGanador = true;
             break;
         }
-        else if ((espacioJuego[posicion][0] == espacioJuego[posicion][1]) && (espacioJuego[posicion][0] == espacioJuego[posicion][2])){
+        else if ((espacioJuego[posicion][0] == espacioJuego[posicion][1]) && (espacioJuego[posicion][0] == espacioJuego[posicion][2]))
+        {
             verificarGanador = true;
             break;
-        }else if ((espacioJuego[0][0] == espacioJuego[1][1]) && (espacioJuego[0][0] == espacioJuego[2][2])){
+        }
+        else if ((espacioJuego[0][0] == espacioJuego[1][1]) && (espacioJuego[0][0] == espacioJuego[2][2]))
+        {
             verificarGanador = true;
             break;
-        }else if ((espacioJuego[0][2] == espacioJuego[1][1]) && (espacioJuego[0][2] == espacioJuego[2][0])){
+        }
+        else if ((espacioJuego[0][2] == espacioJuego[1][1]) && (espacioJuego[0][2] == espacioJuego[2][0]))
+        {
             verificarGanador = true;
             break;
         }
@@ -205,27 +228,23 @@ bool identificarGanador(int Jugada){
     return verificarGanador;
 }
 
-
-
-
-int obtenerJugada(){
+int obtenerJugada()
+{
     srand(time(NULL));
-    void srand();
-    jugada=obtenerMejorJugada();
-    if (jugada=1){
-     return jugada;
-    }else{
-        jugada = 1 + rand() %10;
+    jugada = obtenerMejorJugada();
+    if (jugada = 1)
+    {
         return jugada;
     }
-
+    else
+    {
+        jugada = 1 + rand() % 10;
+        return jugada;
+    }
 }
 
+int obtenerMejorJugada()
+{
 
-int obtenerMejorJugada(){
-
-  return 0;  
-} 
-
-
-
+    return 0;
+}
