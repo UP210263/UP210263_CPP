@@ -8,6 +8,8 @@ Description:This program have to break down in exchange for Mexican bills and co
 
 #include <iostream>
 #include <stdio.h>
+#include <time.h>
+
 using namespace std;
 
 void ttablero(int);
@@ -50,9 +52,9 @@ int main(){
                 turnoJugador++;
             } 
        }else{
-         jugada=rand()%10;
+            jugada=obtenerJugada();
         
-             casillaOcupada = comprobarCasillaOcupada(jugada);
+            casillaOcupada = comprobarCasillaOcupada(jugada);
             if (casillaOcupada == true){
                  do{
                      cout << "Try again,his place is invalid "<<endl;
@@ -76,7 +78,8 @@ int main(){
         cout<< "You are  the "<<resultado<<endl;
         return 0;
        
-    
+    } while (ganador == false);
+   
     }else if (numJugadores==2){
         ttablero(tablero);
          do{
@@ -108,8 +111,8 @@ int main(){
         cout<<"This character is invalid, try again"<<endl;
         }
     }while(numJugadores!=1 && numJugadores!=2);   
-    }while(ganador==false);
 }
+
 
 
 
@@ -206,12 +209,14 @@ bool identificarGanador(int Jugada){
 
 
 int obtenerJugada(){
+    srand(time(NULL));
     void srand();
     jugada=obtenerMejorJugada();
-    if (jugada=-1){
+    if (jugada=1){
      return jugada;
     }else{
-        return 1+rand()%9;
+        jugada = 1 + rand() %10;
+        return jugada;
     }
 
 }
