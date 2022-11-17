@@ -11,7 +11,7 @@
       ¿Cómo usarlo?<br>
       Flujo del proceso<br>
       Ejemplos de funicionamiento<br>
-      Comclusión</p><b><br>
+      Comclusión</p></b><br>
 
 
 <p>En el transcurso de esta unidad desarrollamos poco a poco el código necesario para generar un juedo del Gato funcional.<br>
