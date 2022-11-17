@@ -32,30 +32,27 @@ bool identificarGanadorImag(int);
 int obtenerJugada();
 void reescribirCasillaImag(int);
 int buenaJugada(char);
-void jugarGato(int);
+void jugarGato();
 void colocarJugada();
 int inteligencia();
 int jugarPC();
 void jugar2palyers();
 int numJugadores;
 
-const char PC = 'O';
+/*const char PC = 'O';
 const char HUMANO = 'X';
 const string TABLERO = "Real";
-const string TABLEROIMAG = "Imaginario";
+const string TABLEROIMAG = "Imaginario";*/
 
 int main()
 {
-    int tablero, jugada, player;
-    string resultado;
-    bool casillaOcupada = true, ganador = false;
     do
     {
         cout << "Choose the play mode: 1.-1 player  or 2.-2 players " << endl;
         cin >> numJugadores;
         if (numJugadores == 1)
         {
-            jugarGato(numJugadores);
+            jugarGato();
         }
         else if (numJugadores == 2)
         {
@@ -70,9 +67,8 @@ int main()
 
 
 
-void jugarGato(int numJugadores)
+void jugarGato()
 {
-
     int tablero, jugada;
     bool casillaOcupada = true, ganador = false;
     ttablero(tablero);
@@ -110,21 +106,19 @@ void jugarGato(int numJugadores)
         {
             if (turnoJugador % 2 == 0)
             {
-                cout << "\033[0;31m  You are the LOSER \033[0m\n";
+                cout << "\033[0;31m  You are the LOSER \033[0m"<<endl<<endl;
             }
             else
             {
-                cout << "\033[0;32m You are the WINNER \033[0m\n";
+                cout << "\033[0;32m You are the WINNER \033[0m"<<endl<<endl;
             }
         }
         else
         {
-            cout << "\033[0;33m     Tied game  \033[0m\n";
+            cout << "\033[0;33m     Tied game  \033[0m"<<endl<<endl;
         }
         
 }
-
-      
 
 
 int seleccionarJugada()
@@ -139,6 +133,7 @@ int seleccionarJugada()
     return jugada;
 }
 
+
 bool comprobarCasillaOcupada(int jugada)
 {
     int row = jugada / 10, col = jugada - 1;
@@ -151,6 +146,7 @@ bool comprobarCasillaOcupada(int jugada)
         return false;
     }
 }
+
 
 void reescribirCasilla(int jugada)
 {
@@ -165,6 +161,7 @@ void reescribirCasilla(int jugada)
         espacioJuego[fil][col] = 'X';
     }
 }
+
 
 void ttablero(int)
 {
@@ -201,6 +198,7 @@ void ttablero(int)
     cout << endl;
 }
 
+
 bool identificarGanador(int Jugada)
 {
     bool verificarGanador = false;
@@ -230,6 +228,7 @@ bool identificarGanador(int Jugada)
     }
     return verificarGanador;
 }
+
 
 void copiarTablero()
 {
@@ -298,7 +297,6 @@ bool comprobarCasillaImagOcupada(int jugada)
 
 int jugarPC()
 {
-
     bool casillaOcupada = false;
     
     jugada = buenaJugada('X');
@@ -387,14 +385,16 @@ void jugar2palyers()
 
             if (turnoJugador % 2 == 0)
             {
-                player = 1;
+                player = 2;
+                cout <<" \033[0;34m "<<"The player " << player << " is the WINNER \033[0m\n"<< endl<<endl<<endl;
             }
+
             else
             {
-                player = 2;
+                player = 1;
+                cout <<" \033[0;36m "<<"The player " << player << " is the WINNER \033[0m\n"<< endl<<endl<<endl;
             }
             
-            cout <<"\033[0;32m The player  \033[0m"<< player <<"\033[0;32m is the WINNER \033[0m\n"<< endl;
             
         
        
