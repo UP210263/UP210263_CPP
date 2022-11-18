@@ -51,7 +51,7 @@ Las funciones que se utilizaron fueron: </p><br>
         void jugar2palyers();
         int numJugadores;
 ```
-<P>De la misma manera comenzamos a implementar matrices pequeñas. En este juego, las matrices tienen el papel de ser el tablero no visual del juego, por lo que en esta matriz se registran cada una de las jugadas de ambos participantes en el juego. Además existe un segundo tablero que cuple la función de ser el lienzo en el que se realizan las simulaciones que necesita la PC para escoger una jugada. Dichas matrices son:<br></p>
+<P>De la misma manera comenzamos a implementar matrices pequeñas. En este juego, las matrices tienen el papel de ser el tablero no visual del juego, por lo que en esta matriz se registran cada una de las jugadas de ambos participantes en el juego. Además existe un segundo tablero que cumple la función de ser el lienzo en el que se realizan las simulaciones que necesita la PC para escoger una jugada. Dichas matrices son:<br></p>
 
 ```c++
 //Tablero en el que se registra el juego real entre los dos participantes
@@ -59,16 +59,52 @@ char espacioJuego[3][3] = {{'1', '2', '3'},
                            {'4', '5', '6'},
                            {'7', '8', '9'}};
 
-//Tablero en el que se realizan las simulaciones de la PC
+//Tablero en el que se realizan las simulaciones para la PC
 char copiaEspacio[3][3] = {{'1', '2', '3'},
                            {'4', '5', '6'},
                            {'7', '8', '9'}};   
 ```
 
-<p> </p>
+<p>Si bien las matrices son modificadas fuera de la vista de los usuarios, estas siempres estan en constante cambio de valores en sus determinados espacios. El motivo por el cual el usuario puede ver el tablero, a pesar de estar basado en una matriz, es por que en la funcion ttablero damos instrucciones para que a través de ciclos for se imprima laestructura base tan representativa del juego del gato </p>
+
+```c++
+// ttablero funtion
+      void ttablero(int)
+      {
+            int fi = 0, co = 0;
+            for (int fila = 0; fila < 5; fila++)
+            {
+                  for (int columna = 0; columna < 9; columna++)
+                  {
+                        if (fila == 1 || fila == 3)
+                        {
+                              cout << "_";
+                        }
+                        else if (columna == 1 || columna == 4 || columna == 7)
+                        {
+                        cout << espacioJuego[fi][co];
+                        co++;
+                        }else{
+                              cout << " ";
+                        }
+                        if (columna == 2 || columna == 5)
+                        {
+                              cout << "|";
+                        }
+                  }
+                  cout << endl;
+                  if (fila % 2 == 0)
+                  {
+                        fi++;
+                  }
+                  co = 0;
+            }
+            cout << endl;
+      }
 
 
-
+```
+<p></p>
 
 
 
