@@ -11,8 +11,8 @@ Description:This program have to break down in exchange for Mexican bills and co
 
 using namespace std;
 
-void ttablero(int);
-int turnoJugador = 0, jugada;
+
+int turnoJugador = 0, jugada, numJugadores;
 char espacioJuego[3][3] = {{'1', '2', '3'},
                            {'4', '5', '6'},
                            {'7', '8', '9'}};
@@ -21,7 +21,7 @@ char copiaEspacio[3][3] = {{'1', '2', '3'},
                            {'4', '5', '6'},
                            {'7', '8', '9'}};                           
 
-                           
+void ttablero(int);                          
 int seleccionarJugada();
 void copiarTablero();
 void reescribirCasilla(int);
@@ -37,12 +37,7 @@ void colocarJugada();
 int inteligencia();
 int jugarPC();
 void jugar2palyers();
-int numJugadores;
 
-/*const char PC = 'O';
-const char HUMANO = 'X';
-const string TABLERO = "Real";
-const string TABLEROIMAG = "Imaginario";*/
 
 int main()
 {
