@@ -19,14 +19,14 @@
 A continuación se presentara la explicación detalladas sobre cómo funciona, y en que orden se ejecutan cada una de las partes de este código.</p><br><br>
 
 
-<h3>1.-¿Funciones?<h3>
+<h3>1.-¿Funciones?</h3>
 
 <p> Puesto que el tema principal de esta unidad fueron las FUNCIONES, estas estan muy presentes dentro de la estructura del código del juego.<br>
 Antes que nada es necesario dejar en claro que es una función para no dejar cabos sueltos;pues bien, las FUNCIONES son como cajones de código en el que se guarda comandos especificos para la ejecución de un proceso determinado. Dicho cajón posee un nombre único que es utilizado por el programador para invocar el procedimiento que posee dentro de si, y que se puede repetir cuantas veces sean necesarias con solo escribir su nombre. </p><br><br>
 
 
 
-<h3>2.-¿Cómo esta compuesto el código?<h3>
+<h3>2.-¿Cómo esta compuesto el código?</h3>
 
 <p>Ahora que está claro el término FUNCIÓN, es tiempo de comentar que este programa requiere de 16 funciones para lograr que el juego funcione como se mostrará más adelante.<br> 
 Si bien el código es algo extenso para la naturaleaza del producto final, lo cierto, es que el elemento culpable de la extención del código es la semi inteligencia de la que dotamos al PC para que al jugar contra los usuarios representara un verdadero reto el juego. Gracias a esta inteligencia fue necesario replicar varias de las funciones ya existentes y hacerles pequeñas modificaciones para que cumplieran la labor de realizar simulaciones de posibles jugadas para la PC y de esta forma no solo sacar números de forma aleatoria.<br>
