@@ -186,7 +186,7 @@ sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz,
 <div align="center"><img src="Imagenes/unJugador/primer%20movimiento%201Jugador.png"></div>
 
 <p>De esta forma el partido fluirá de manera regular hasta que el jugador o la PC consiga ganar, lo cual puede suceder al unir tres circulos o equis en cualquiera de las sigientes formas(representando los triunfos con los circulos):</p>
-<b><p>1.<img align="left" src="Imagenes/unJugador/formas_ganar1.png">  2.<img  src="Imagenes/unJugador/formas_ganar2.png">  3.<img src="Imagenes/unJugador/formas_ganar3.png">  4.<img align="right" src="Imagenes/unJugador/formas_ganar4.png"><br>
+<b><p>1.  <img align="left" src="Imagenes/unJugador/formas_ganar1.png">      2.  <img  src="Imagenes/unJugador/formas_ganar2.png">      3.  <img src="Imagenes/unJugador/formas_ganar3.png">           4.<img align="right" src="Imagenes/unJugador/formas_ganar4.png"><br>
 
-<p>5.<img align="left" src="Imagenes/unJugador/formas_ganar5.png">  6.<img  src="Imagenes/unJugador/formas_ganar6.png">  7.<img src="Imagenes/unJugador/formas_ganar7.png">  8.<img align="right" src="Imagenes/unJugador/formas_ganar8.png"></b><br>
+<p>5.  <img align="left" src="Imagenes/unJugador/formas_ganar5.png">      6.  <img  src="Imagenes/unJugador/formas_ganar6.png">      7.  <img src="Imagenes/unJugador/formas_ganar7.png">                   8.<img align="right" src="Imagenes/unJugador/formas_ganar8.png"></b></p><br>
 
