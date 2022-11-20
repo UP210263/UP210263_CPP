@@ -178,11 +178,15 @@ sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz,
 <h3>4.-¿Cómo usarlo?</h3>
 
 <p>El código esta diseñado para que el juego sea fácil de entender para el o los jugadores. Lo primero que aparecerá será la pregunta:<br>
-<div align="center"><img src="Imagenes/modoDeJuego.png"></div</p>
+<div align="center"><img src="Imagenes/unJugador/modoDeJuego.pngmodoDeJuego.png"></div></p>
+<p>Dependiendo de la respuesta del jugador a esta pregunta se tomará un camino determinado.<BR>Si el usuario preciona el "1", seleccionando así la opción de jugar contra la PC, el programa tomará el camino de la funciión 'jugarGato' que imprimira el tablero de inmediato y dará siempre al usuario la primera jugada y sirmpre será el jugador del circulo:   </p>
+<div align="center"><img src="Imagenes/unJugador/tableroPUnJugador.png"></div>
+<br>
+<p>Inmediatamente después de que el usuario escoga una pocisión la PC imprimirá la suya(siempre será la 'X'), tras un analisis en la función jugarPC, que dota a la PC de una pequeña inteligencia que le permite dar una partida más interesante:</p>
+<div align="center"><img src="Imagenes/unJugador/primer%20movimiento%201Jugador.png"></div>
 
+<p>De esta forma el partido fluirá de manera regular hasta que el jugador o la PC consiga ganar, lo cual puede suceder al unir tres circulos o equis en cualquiera de las sigientes formas:</p>
+<b><p>1.<img align="left" src="Imagenes/unJugador/formas_ganar1.png">  2.<img  src="Imagenes/unJugador/formas_ganar2.png">  3.<img src="Imagenes/unJugador/formas_ganar3.png">  4.<img align="right" src="Imagenes/unJugador/formas_ganar4.png"><br>
 
-
-
-
-
+<p>5.<img align="left" src="Imagenes/unJugador/formas_ganar5.png">  6.<img  src="Imagenes/unJugador/formas_ganar6.png">  7.<img src="Imagenes/unJugador/formas_ganar7.png">  8.<img align="right" src="Imagenes/unJugador/formas_ganar8.png"></b><br>
 
