@@ -65,7 +65,7 @@ char copiaEspacio[3][3] = {{'1', '2', '3'},
                            {'7', '8', '9'}};   
 ```
 
-<p>Si bien las matrices son modificadas fuera de la vista de los usuarios, estas siempres estan en constante cambio de valores en sus determinados espacios. El motivo por el cual el usuario puede ver el tablero, a pesar de estar basado en una matriz, es por que en la funcion ttablero damos instrucciones para que a través de ciclos for se imprima laestructura base tan representativa del juego del gato </p>
+<p>Si bien las matrices son modificadas fuera de la vista de los usuarios, estas siempre estan en constante cambio de valores en sus determinados espacios. El motivo por el cual el usuario puede ver el tablero, a pesar de estar basado en una matriz, es por que en la funcion ttablero damos instrucciones para que a través de ciclos for se imprima la estructura base tan representativa del juego del gato </p>
 
 ```c++
 // ttablero funtion
@@ -104,7 +104,83 @@ char copiaEspacio[3][3] = {{'1', '2', '3'},
 
 
 ```
-<p></p>
+<p>La estructura creada en esta función se imprimirá, borrará y reimprimirá en repetidas ocaciones.<br>
+Dentro de las fincuiónes del código se encuentran los modos de juego, que se utilizan para que el jugador pueda escoger jugar contra la PC o jugar contra otra persona.Estas funciones poseeen un código similar dentro pero con la impirtante diferencia de que el la funció de jugarGato que corresponde a la opción de jugar contra la PC utiliza más el apoyo de otras funciones, pues todos sus procoesos dependen de los pequeños procesos que generan el resto de funciones.Además dentro de la opción jugar solo se requiere de la simulación de movimientos futuros del jugador y la PC para así poder decidir que jugada hará la PC. Dicha simulación requiere por si misma de un conjunto de funciones diferentes para lograr aportar algo de inteligencia a las deciciones de la PC.</p>
+
+```c++
+void jugarGato()
+{
+    int tablero, jugada;
+    bool casillaOcupada = true, ganador = false;
+    ttablero(tablero);
+            
+      do
+        {
+            if (turnoJugador % 2 == 0)
+            {
+                jugada = seleccionarJugada();
+            }
+            else
+            {
+                jugada = jugarPC();
+            }
+
+            casillaOcupada = comprobarCasillaOcupada(jugada);
+            if (casillaOcupada == true)
+            {
+                do
+                {
+                    cout << "Invalid play. Try again\n";
+                    break;
+                } while (casillaOcupada == true);
+            }
+            else if (casillaOcupada == false)
+            {
+                system("clear");
+                reescribirCasilla(jugada);
+                ttablero(tablero);
+                turnoJugador++;
+            }
+            ganador = identificarGanador(ganador);
+        } while (ganador == false && turnoJugador < 9);
+        if (turnoJugador < 9)
+        {
+            if (turnoJugador % 2 == 0)
+            {
+                cout << "\033[0;31m  You are the LOSER \033[0m"<<endl<<endl;
+            }
+            else
+            {
+                cout << "\033[0;32m You are the WINNER \033[0m"<<endl<<endl;
+            }
+        }
+        else
+        {
+            cout << "\033[0;33m     Tied game  \033[0m"<<endl<<endl;
+        }
+        
+}
+
+
+```
+
+<P>Como elementos nuevos para este repositorio, además de las matrices y las funciones, se encuentra el:<br>  
+sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz, para de esta forma dejar lugar disponible para posicionar una jugada. Este se utiliza para el o los jugadores y para la PC.<br>
+"\033[0;31m  MESSAGE \033[0m" : Es usado para dar color y estilo a un mensaje o impreción especifica.</p><br> <br>
+
+<h3>3.-¿Cómo funciona el código?</h3>
+
+<p>Como ya se mencionó, el programa requiere de 16 funciones diferentas para funcionar de forma correcta, pero,¿cómo es que realmente funciona este programa?, ciertamente sigue el flujo normal de proceso de todo programa que corre un compilador,  este proceso es de arriba hacia abajo, por lo ques es necesario colocar los nombres de las funciones el tipo de funciones que son y que tipo de variables reciben que se usarán dentro del main u otras funciones, antes de que la función a utilizar se presente, esto para dejar en claro al compilador que dicha función sí existe pero que se encuentra más adelante,por lo que este nombramiento de función activa los procesos de las funciones desde un inicio para así tener disponibles todos esos procesos que se encuentran posteriores al main pero que se requieren para ejecutar el proceso dentro del main. Además se tiene la necesidad de llamar a librerias que permitan el ejecutar algunos procesos especificos. </p>
+
+<P>Para que una matriz sea funcional se requieré que se determine el tipo de contenido que se podrá colocar dentro de sus espacios disponibles, y además cuantos de estos espacios tnedrá. la capacidad de la matriz es la que se coloca después del nombre "[3][3]" que en este caso indica que se trata de una matriz de 9 espacios disponibles para almacenar algún valor. EL tipo de variable que será aceptado dentro de la matriz se determina igual que una variable; es decir, antes del nombre de la matriz. </P><br><br>
+
+
+<h3>4.-¿Cómo usarlo?</h3>
+
+<p>El código esta diseñado para que el juego sea fácil de entender para el o los jugadores. Lo primero que aparecerá será la pregunta:<br>
+<img align=center src="Imagenes/modoDeJuego.png"></p>
+
+
 
 
 

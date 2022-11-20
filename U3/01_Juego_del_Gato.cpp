@@ -38,15 +38,11 @@ int inteligencia();
 int jugarPC();
 void jugar2palyers();
 
-void gotoxy(int x, int y){
-    cout<<"\033["<< y<<"i"<<x<<"f";
-}
 
 int main()
 {
     do
     {
-        gotoxy(19,15);
         cout << "Choose the play mode: 1.-1 player  or 2.-2 players " << endl;
         cin >> numJugadores;
         if (numJugadores == 1)
