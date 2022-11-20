@@ -178,7 +178,7 @@ sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz,
 <h3>4.-¿Cómo usarlo?</h3>
 
 <p>El código esta diseñado para que el juego sea fácil de entender para el o los jugadores. Lo primero que aparecerá será la pregunta:<br>
-<img align='center' src="Imagenes/modoDeJuego.png"></p>
+<div align="center"><img src="Imagenes/modoDeJuego.png"></div</p>
 
 
 
