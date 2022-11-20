@@ -12,7 +12,7 @@
       4.-¿Cómo usarlo?<br>
       5.-Flujo del proceso<br>
       6.-Ejemplos de funicionamiento<br>
-      7.-Comclusión</p></b><br>
+      7.-Conclusión</p></b><br>
 
 
 <p>En el transcurso de esta unidad desarrollamos poco a poco el código necesario para generar un juedo del Gato funcional.<br>
