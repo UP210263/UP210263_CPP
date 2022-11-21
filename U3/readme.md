@@ -204,4 +204,4 @@ Al igual que al jugar contra la PC, lo primero que se presentara será el tabler
 <div align="center"><img src="Imagenes/DosJugadores/tableroP2Jugadores.png"></div><br>
 
 <p>En la modalidad de dos jugadores siempre iniciará el player 1 a quien corresponde el simbolo 'O' y el player 2 a quien corresponde el simbolo 'X' en el segundo movimiento (sin posibilidad de cambiar los simbolos ni turnos), si alguno de los jugadores lográ una de las jugadas ganadoras mostradas con anterioridad, el programa, dependiendo de cual player sea, desplegará:</p><br>
-<div align="center"><img align="left" src="Imagenes/DosJugadores/player1W.png">    <img align="left" src="Imagenes/DosJugadores/player1W.png"></div><br>
+<div align="center"><img align="left" src="Imagenes/DosJugadores/player1W.png">    <img align="left" src="Imagenes/DosJugadores/player2W.png"></div><br>
