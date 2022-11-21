@@ -211,8 +211,8 @@ As when playing against the PC, the first thing that will be presented will be t
 
 <H3>5.-Flow of the process:Flowchart<H3>
 
-<img src="Imagenes/diagrama1.png"><img src="Imagenes/diagrama2.png"><br>
-<img src="Imagenes/diagrama3.png"><img src="Imagenes/diagrama4.png"><br>
+<img width="100" height="100" src="Imagenes/diagrama1.png" ><img width="100" height="100" src="Imagenes/diagrama2.png"><br>
+<img width="100" height="100" src="Imagenes/diagrama3.png"><img width="100" height="100" src="Imagenes/diagrama4.png"><br>
 <br><br><br>
 
 <h3>6.-Examples:</h3>
