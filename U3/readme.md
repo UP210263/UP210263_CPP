@@ -179,7 +179,7 @@ system("clear"): It is in charge of deleting the content of the spaces of the ma
 <h3>4.-How to use it?</h3>
 
 <p>The code is designed to make the game easy for the player(s) to understand. The first thing that will appear will be the question:<br>
-<div align="center"><img src="Imagenes/unJugador/modoDeJuego.pngmodoDeJuego.png"></div></p>
+<div align="center"><img src="Imagenes/unJugador/modoDeJuego.png"></div></p>
 <p>Depending on the player's response to this question, a certain path will be taken.<BR>If the user presses "1", thus selecting the option to play against the PC, the program will take the path of the 'jugarGato' function that will print the board immediately and will always give the user the first move and will always be the player in the circle: </p>
 <div align="center"><img src="Imagenes/unJugador/tableroPUnJugador.png"></div>
 <br>
