@@ -196,3 +196,6 @@ sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz,
 <div align="center"><img src="Imagenes/unJugador/loser.png"></div><br>
 <p>Pero si los espacios del tablero se agotan y ninguno de los dos a consegido una jugada ganadora el mensaje que se imprimirá será:</p><br>
 <div align="center"><img src="Imagenes/unJugador/tiedGame.png"></div><br>
+<P>Tras imprimir cualquierá de los anteriores mensajes la ejecución del progrma llegará a su final y esto se reconoce al ver en la terminal de:</p><br>
+<div align="center"><img src="Imagenes/unJugador/fin.png"></div><br>
+
