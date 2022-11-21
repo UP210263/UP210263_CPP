@@ -1,6 +1,6 @@
 
 <h1>Unity III</h1>
-<H2>Construcción de un tablero de Gato funcional </H2><br>
+<H2>Building a Functional Tic Tac Toe Board </H2><br>
 <div align="center"> 
 <img width="500"  height="70" src="https://i.pinimg.com/originals/07/24/88/0724884440e8ddd0896ff557b75a222a.gif">
 </div>
@@ -15,7 +15,7 @@
       7.-Conclusion</p></b><br>
 
 
-<p>Over the course of this unit we gradually develop the code needed to generate a functional Cat game.<br>
+<p>Over the course of this unit we gradually develop the code needed to generate a functional Tic Tac Toe.<br>
 Below is a detailed explanation of how it works, and in what order each part of this code is executed.</p><br><br>
 
 
@@ -65,7 +65,7 @@ char copiaEspacio[3][3] = {{'1', '2', '3'},
                            {'7', '8', '9'}};   
 ```
 
-<p>Although the matrices are modified out of the view of the users, they are always in constant change of values ​​in their determined spaces. The reason why the user can see the board, despite being based on a matrix, is because in the ttablero function we give instructions so that the base structure so representative of the game of the cat is printed through for loops.</p>
+<p>Although the matrices are modified out of the view of the users, they are always in constant change of values ​​in their determined spaces. The reason why the user can see the board, despite being based on a matrix, is because in the ttablero function we give instructions so that the base structure so representative of the Tic Tac Toe is printed through for loops.</p>
 
 ```c++
 // ttablero funtion
@@ -186,7 +186,7 @@ system("clear"): It is in charge of deleting the content of the spaces of the ma
 <p>Immediately after the user chooses a position, the PC will print his position (it will always be 'X'), after an analysis in the playPC function, which gives the PC a little intelligence that allows it to play a more interesting game:</p>
 <div align="center"><img src="Imagenes/unJugador/primer%20movimiento%201Jugador.png"></div>
 
-<p>In this way, the game will flow regularly until the player or the PC manages to win, which can happen by joining three circles or xes in any of the following ways (representing the wins with the circles):</p>
+<p>In this way, the game will flow regularly until the player or the PC manages to win, which can happen by joining three "O" or "X" in any of the following ways (representing the wins with the circles):</p>
 
 <div  align="center">   <img  src="Imagenes/unJugador/formas_ganar1.png">  <img   src="Imagenes/unJugador/formas_ganar2.png">  <img  src="Imagenes/unJugador/formas_ganar3.png">  <img  src="Imagenes/unJugador/formas_ganar4.png">
   <img src="Imagenes/unJugador/formas_ganar5.png">  <img   src="Imagenes/unJugador/formas_ganar6.png">  <img src="Imagenes/unJugador/formas_ganar7.png">  <img src="Imagenes/unJugador/formas_ganar8.png"></div><br><br><br><br><br>
@@ -223,6 +223,8 @@ As when playing against the PC, the first thing that will be presented will be t
 <p>This code was quite difficult for me to structure, in the first instance, because I gave it too long an extension, this is because, to avoid confusion and save analysis time in adapting the functions, I chose to rewrite several functions making them only small changes that in turn generate the same procedure but with different data entry. Secondly, my lack of experience in the development of codes that require a deeper analysis, especially in the arrangement of each of the elements that compose it; This made it difficult for me to clearly visualize how the program would be structured from a general view and later to a more detailed one. In the third instance, I have to admit that I need to put my programming skills into practice, and thus develop my logic, because at certain times I completely lost myself on what I was doing and wasted a lot of time trying to get back to the code. Finally, in the fourth instance, my organization within the code is not very favorable on several occasions, this is due, for the most part, to the fact that I do not organize what I am going to program before typing, so I am blank in front of the screen waiting for ideas to flow out of nowhere and that makes me try various semi-developed ways that are mostly unfinished and that in the end only get in the way of the final code that loses hierarchy organization because I don't have a start order, but rather start several elements at the same time and at the end I see what function was assigned to each function.<br>
 The aforementioned points affected my productivity to give efficiency to the program, since it has several defects, the most obvious is the aesthetics, the backend part absorbed so much time that I did not have enough time to dedicate it to the frontend, which is already bad first impression of the program. In addition, the backend is not elaborated with efficiency, since it has limitations; such as the fact that players do not have the possibility to choose their turns or the symbols they are going to play with, or that you can only play one game and then the program closes, these types of details are elements that I could solve but for a bad reason organization of time and logic it was not possible for me to add them to the program. <BR>
 The program has the flaw that when using the two-player mode and reaching a draw, the game does not end and it keeps asking you for numbers even when there is no space left to place them, so the game becomes infinite, only terminating the program forcing it through ctrl+C.<br>
-But despite all the defects that the program has, it fulfills its function of allowing a cat game to be executed in the terminal and that when playing against the PC, it has the ability to detect which box to choose to avoid let the opponent win. I have also learned a lot from this first slightly more "complex" code, either about the functions, the use that can be given to a matrix and above all the ability to produce a little intelligence for decisions within the game by the PC<br>
+But despite all the defects that the program has, it fulfills its function of allowing a tic tac toe to be executed in the terminal and that when playing against the PC, it has the ability to detect which box to choose to avoid let the opponent win. I have also learned a lot from this first slightly more "complex" code, either about the functions, the use that can be given to a matrix and above all the ability to produce a little intelligence for decisions within the game by the PC<br>
 I think that the most important thing is to learn from mistakes in order to know how to correct or avoid them in the future, which is why I think that this experience has been stressful, vastly enriching for my growth in the professional field.</p>
+
+
 
