@@ -196,6 +196,12 @@ sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz,
 <div align="center"><img src="Imagenes/unJugador/loser.png"></div><br>
 <p>Pero si los espacios del tablero se agotan y ninguno de los dos a consegido una jugada ganadora el mensaje que se imprimirá será:</p><br>
 <div align="center"><img src="Imagenes/unJugador/tiedGame.png"></div><br>
-<P>Tras imprimir cualquierá de los anteriores mensajes la ejecución del progrma llegará a su final y esto se reconoce al ver en la terminal de:</p><br>
+<P>Tras imprimir cualquierá de los anteriores mensajes la ejecución del programa llegará a su final y esto se reconoce al ver en la terminal de:</p><br>
 <div align="center"><img src="Imagenes/unJugador/fin.png"></div><br>
 
+<P>Cuando el usuario escoge la opción de dos jugadores el programa llama a la función 'jugar2players' que se encargara de brindar el espacio de juego a los dos usuarios, llamando dos veces la función 'seleccionarJugada' y 'reescribircasilla' que admás de 'comprobarCasillaOcupada' se encargan de la mayor parte del proceso de este modo de juego.<br>
+Al igual que al jugar contra la PC, lo primero que se presentara será el tablero con los espacios mostrando el número que representa cada uno, además del mensaje 'choose a plase':</p><br>
+<div align="center"><img src="Imagenes/DosJugadores/tableroP2Jugadores.png"></div><br>
+
+<p>En la modalidad de dos jugadores siempre iniciará el player 1 a quien corresponde el simbolo 'O' y el player 2 a quien corresponde el simbolo 'X' en el segundo movimiento (sin posibilidad de cambiar los simbolos ni turnos), si alguno de los jugadores lográ una de las jugadas ganadoras mostradas con anterioridad, el programa, dependiendo de cual player sea, desplegará:</p><br>
+<div align="center"><img align="left" src="Imagenes/DosJugadores/player1W.png">    <img align="left" src="Imagenes/DosJugadores/player1W.png"></div><br>
