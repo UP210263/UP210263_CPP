@@ -6,31 +6,31 @@
 </div>
 
 <h3>Index:</h3>
-<b><p>1.-¿Funciones?<br>
-      2.-¿Cómo esta compuesto el código?<br>
-      3.-¿Cómo funciona el código?<br>
-      4.-¿Cómo usarlo?<br>
-      5.-Flujo del proceso<br>
-      6.-Ejemplos de funicionamiento<br>
-      7.-Conclusión</p></b><br>
+<b><p>1.-Functions?<br>
+      2.-How is the code composed?<br>
+      3.-How does the code work?<br>
+      4.-How to use it?<br>
+      5.-Flow of the process<br>
+      6.-Examples of operation<br>
+      7.-Conclusion</p></b><br>
 
 
-<p>En el transcurso de esta unidad desarrollamos poco a poco el código necesario para generar un juedo del Gato funcional.<br>
-A continuación se presentara la explicación detalladas sobre cómo funciona, y en que orden se ejecutan cada una de las partes de este código.</p><br><br>
+<p>Over the course of this unit we gradually develop the code needed to generate a functional Cat game.<br>
+Below is a detailed explanation of how it works, and in what order each part of this code is executed.</p><br><br>
 
 
-<h3>1.-¿Funciones?</h3>
+<h3>1.-Functions?</h3>
 
-<p> Puesto que el tema principal de esta unidad fueron las FUNCIONES, estas estan muy presentes dentro de la estructura del código del juego.<br>
-Antes que nada es necesario dejar en claro que es una función para no dejar cabos sueltos;pues bien, las FUNCIONES son como cajones de código en el que se guarda comandos especificos para la ejecución de un proceso determinado. Dicho cajón posee un nombre único que es utilizado por el programador para invocar el procedimiento que posee dentro de si, y que se puede repetir cuantas veces sean necesarias con solo escribir su nombre. </p><br><br>
+<p> Since the main topic of this unit was FUNCTIONS, they are very present within the structure of the game code.<br>
+First of all, it is necessary to make it clear that it is a function so as not to leave loose ends; well, FUNCTIONS are like code drawers in which specific commands are stored for the execution of a certain process. Said drawer has a unique name that is used by the programmer to invoke the procedure that it has within itself, and that can be repeated as many times as necessary just by writing its name. </p><br><br>
 
 
 
-<h3>2.-¿Cómo esta compuesto el código?</h3>
+<h3>2.-How is the code composed?</h3>
 
-<p>Ahora que está claro el término FUNCIÓN, es tiempo de comentar que este programa requiere de 16 funciones para lograr que el juego funcione como se mostrará más adelante.<br> 
-Si bien el código es algo extenso para la naturaleaza del producto final, lo cierto, es que el elemento culpable de la extención del código es la semi inteligencia de la que dotamos al PC para que al jugar contra los usuarios representara un verdadero reto el juego. Gracias a esta inteligencia fue necesario replicar varias de las funciones ya existentes y hacerles pequeñas modificaciones para que cumplieran la labor de realizar simulaciones de posibles jugadas para la PC y de esta forma no solo sacar números de forma aleatoria.<br>
-Las funciones que se utilizaron fueron: </p><br>
+<p>Now that the term FUNCTION is clear, it's time to comment that this program requires 16 functions to make the game work as it will be shown later.<br>
+Although the code is somewhat extensive for the nature of the final product, the truth is that the element to blame for the extension of the code is the semi-intelligence that we endowed the PC with so that when playing against the users the game would represent a real challenge. . Thanks to this intelligence, it was necessary to replicate several of the already existing functions and make small modifications to them so that they would fulfill the task of carrying out simulations of possible plays for the PC and in this way not just draw numbers randomly.<br>
+The functions that were used were:</p><br>
 
 ```c++
         void ttablero(int);                          
@@ -51,21 +51,21 @@ Las funciones que se utilizaron fueron: </p><br>
         void jugar2palyers();
         int numJugadores;
 ```
-<P>De la misma manera comenzamos a implementar matrices pequeñas. En este juego, las matrices tienen el papel de ser el tablero no visual del juego, por lo que en esta matriz se registran cada una de las jugadas de ambos participantes en el juego. Además existe un segundo tablero que cumple la función de ser el lienzo en el que se realizan las simulaciones que necesita la PC para escoger una jugada. Dichas matrices son:<br></p>
+<P>In the same way we started to implement small matrices. In this game, the matrices have the role of being the non-visual board of the game, so each of the plays of both participants in the game are recorded in this matrix. In addition, there is a second board that fulfills the function of being the canvas on which the simulations that the PC needs to choose a play are carried out. These matrices are:<br></p>
 
 ```c++
-//Tablero en el que se registra el juego real entre los dos participantes
+//Board on which the actual game between the two participants is recorded
 char espacioJuego[3][3] = {{'1', '2', '3'},
                            {'4', '5', '6'},
                            {'7', '8', '9'}};
 
-//Tablero en el que se realizan las simulaciones para la PC
+//Board in which the simulations for the PC are carried out
 char copiaEspacio[3][3] = {{'1', '2', '3'},
                            {'4', '5', '6'},
                            {'7', '8', '9'}};   
 ```
 
-<p>Si bien las matrices son modificadas fuera de la vista de los usuarios, estas siempre estan en constante cambio de valores en sus determinados espacios. El motivo por el cual el usuario puede ver el tablero, a pesar de estar basado en una matriz, es por que en la funcion ttablero damos instrucciones para que a través de ciclos for se imprima la estructura base tan representativa del juego del gato </p>
+<p>Although the matrices are modified out of the view of the users, they are always in constant change of values ​​in their determined spaces. The reason why the user can see the board, despite being based on a matrix, is because in the ttablero function we give instructions so that the base structure so representative of the game of the cat is printed through for loops.</p>
 
 ```c++
 // ttablero funtion
@@ -104,8 +104,8 @@ char copiaEspacio[3][3] = {{'1', '2', '3'},
 
 
 ```
-<p>La estructura creada en esta función se imprimirá, borrará y reimprimirá en repetidas ocaciones.<br>
-Dentro de las fincuiónes del código se encuentran los modos de juego, que se utilizan para que el jugador pueda escoger jugar contra la PC o jugar contra otra persona.Estas funciones poseeen un código similar dentro pero con la impirtante diferencia de que el la funció de jugarGato que corresponde a la opción de jugar contra la PC utiliza más el apoyo de otras funciones, pues todos sus procoesos dependen de los pequeños procesos que generan el resto de funciones.Además dentro de la opción jugar solo se requiere de la simulación de movimientos futuros del jugador y la PC para así poder decidir que jugada hará la PC. Dicha simulación requiere por si misma de un conjunto de funciones diferentes para lograr aportar algo de inteligencia a las deciciones de la PC.</p>
+<p>The structure created in this function will be printed, deleted and reprinted repeatedly.<br>
+Within the code's functions are the game modes, which are used so that the player can choose to play against the PC or play against another person. These functions have a similar code inside but with the important difference that the function was jugarGato, which corresponds to the option to play against the PC, uses the support of other functions more, since all its processes depend on the small processes that generate the rest of the functions. Also, within the play option, only the simulation of future movements is required of the player and the PC in order to be able to decide what play the PC will make. Said simulation itself requires a set of different functions in order to contribute some intelligence to the decisions of the PC.</p><br>
 
 ```c++
 void jugarGato()
@@ -164,44 +164,59 @@ void jugarGato()
 
 ```
 
-<P>Como elementos nuevos para este repositorio, además de las matrices y las funciones, se encuentra el:<br>  
-sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz, para de esta forma dejar lugar disponible para posicionar una jugada. Este se utiliza para el o los jugadores y para la PC.<br>
-"\033[0;31m  MESSAGE \033[0m" : Es usado para dar color y estilo a un mensaje o impreción especifica.</p><br> <br>
-
-<h3>3.-¿Cómo funciona el código?</h3>
-
-<p>Como ya se mencionó, el programa requiere de 16 funciones diferentas para funcionar de forma correcta, pero,¿cómo es que realmente funciona este programa?, ciertamente sigue el flujo normal de proceso de todo programa que corre un compilador,  este proceso es de arriba hacia abajo, por lo ques es necesario colocar los nombres de las funciones el tipo de funciones que son y que tipo de variables reciben que se usarán dentro del main u otras funciones, antes de que la función a utilizar se presente, esto para dejar en claro al compilador que dicha función sí existe pero que se encuentra más adelante,por lo que este nombramiento de función activa los procesos de las funciones desde un inicio para así tener disponibles todos esos procesos que se encuentran posteriores al main pero que se requieren para ejecutar el proceso dentro del main. Además se tiene la necesidad de llamar a librerias que permitan el ejecutar algunos procesos especificos. </p>
-
-<P>Para que una matriz sea funcional se requieré que se determine el tipo de contenido que se podrá colocar dentro de sus espacios disponibles, y además cuantos de estos espacios tnedrá. la capacidad de la matriz es la que se coloca después del nombre "[3][3]" que en este caso indica que se trata de una matriz de 9 espacios disponibles para almacenar algún valor. EL tipo de variable que será aceptado dentro de la matriz se determina igual que una variable; es decir, antes del nombre de la matriz. </P><br><br>
+<P>As new elements for this repository, in addition to matrices and functions, there is:<br>
+system("clear"): It is in charge of deleting the content of the spaces of the matrix, in order to leave space available to position a move. This is used for the player(s) and for the PC.<br>
+"\033[0;31m MESSAGE \033[0m" : It is used to give color and style to a specific message or impression.</p><br> <br>
 
 
-<h3>4.-¿Cómo usarlo?</h3>
+<h3>How does the code work?</h3>
 
-<p>El código esta diseñado para que el juego sea fácil de entender para el o los jugadores. Lo primero que aparecerá será la pregunta:<br>
+<p>As already mentioned, the program requires 16 different functions to function correctly, but how does this program actually work? It certainly follows the normal process flow of any program running a compiler, this process It is from top to bottom, so it is necessary to place the names of the functions, the type of functions they are and what type of variables they receive that will be used within the main or other functions, before the function to be used is presented, this to make it clear to the compiler that this function does exist but that it is found later, so this function naming activates the function processes from the beginning in order to have available all those processes that are after main but that are require to execute the process inside the main. In addition, there is the need to call libraries that allow the execution of some specific processes. </p>
+
+<P>For a matrix to be functional, it is required to determine the type of content that can be placed within its available spaces, and also how many of these spaces it will have. the capacity of the array is the one that is placed after the name "[3][3]" which in this case indicates that it is an array of 9 spaces available to store some value. The type of variable that will be accepted into the array is determined the same as a variable; that is, before the name of the array.</P><br><br>
+
+
+<h3>4.-How to use it?</h3>
+
+<p>The code is designed to make the game easy for the player(s) to understand. The first thing that will appear will be the question:<br>
 <div align="center"><img src="Imagenes/unJugador/modoDeJuego.pngmodoDeJuego.png"></div></p>
-<p>Dependiendo de la respuesta del jugador a esta pregunta se tomará un camino determinado.<BR>Si el usuario preciona el "1", seleccionando así la opción de jugar contra la PC, el programa tomará el camino de la funciión 'jugarGato' que imprimira el tablero de inmediato y dará siempre al usuario la primera jugada y sirmpre será el jugador del circulo:   </p>
+<p>Depending on the player's response to this question, a certain path will be taken.<BR>If the user presses "1", thus selecting the option to play against the PC, the program will take the path of the 'jugarGato' function that will print the board immediately and will always give the user the first move and will always be the player in the circle: </p>
 <div align="center"><img src="Imagenes/unJugador/tableroPUnJugador.png"></div>
 <br>
-<p>Inmediatamente después de que el usuario escoga una pocisión la PC imprimirá la suya(siempre será la 'X'), tras un analisis en la función jugarPC, que dota a la PC de una pequeña inteligencia que le permite dar una partida más interesante:</p>
+<p>Immediately after the user chooses a position, the PC will print his position (it will always be 'X'), after an analysis in the playPC function, which gives the PC a little intelligence that allows it to play a more interesting game:</p>
 <div align="center"><img src="Imagenes/unJugador/primer%20movimiento%201Jugador.png"></div>
 
-<p>De esta forma el partido fluirá de manera regular hasta que el jugador o la PC consiga ganar, lo cual puede suceder al unir tres circulos o equis en cualquiera de las sigientes formas(representando los triunfos con los circulos):</p>
+<p>In this way, the game will flow regularly until the player or the PC manages to win, which can happen by joining three circles or xes in any of the following ways (representing the wins with the circles):</p>
 
-<b><div  align="center">   <img  align="left" src="Imagenes/unJugador/formas_ganar1.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar2.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar3.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar4.png">
-  <img  align="left" src="Imagenes/unJugador/formas_ganar5.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar6.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar7.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar8.png"></b></div><br><br><br><br><br>
+<div  align="center">   <img  src="Imagenes/unJugador/formas_ganar1.png">  <img   src="Imagenes/unJugador/formas_ganar2.png">  <img  src="Imagenes/unJugador/formas_ganar3.png">  <img  src="Imagenes/unJugador/formas_ganar4.png">
+  <img src="Imagenes/unJugador/formas_ganar5.png">  <img   src="Imagenes/unJugador/formas_ganar6.png">  <img src="Imagenes/unJugador/formas_ganar7.png">  <img src="Imagenes/unJugador/formas_ganar8.png"></div><br><br><br><br><br>
 
-<div align="center"><P>Si el jugador logra alguna de esta jugadas el juego desplegará el siguiente mensaje:</p></div><br>
+<div align="center"><P>If the player achieves any of these moves, the game will display the following message:</p></div><br>
 <div align="center"><img src="Imagenes/unJugador/winner.png"></div><br>
-<div align="center"><p>En cambio, si la PC es la gandora el programa imprimirá:</p></div><br>
+<div align="center"><p>On the other hand, if the PC is the winner, the program will print:
+</p></div><br>
+
 <div align="center"><img src="Imagenes/unJugador/loser.png"></div><br>
-<p>Pero si los espacios del tablero se agotan y ninguno de los dos a consegido una jugada ganadora el mensaje que se imprimirá será:</p><br>
+<p>But if the spaces on the board run out and neither of them has made a winning move, the message that will be printed will be:</p><br>
 <div align="center"><img src="Imagenes/unJugador/tiedGame.png"></div><br>
-<P>Tras imprimir cualquierá de los anteriores mensajes la ejecución del programa llegará a su final y esto se reconoce al ver en la terminal de:</p><br>
+<P>After printing any of the previous messages, the execution of the program will come to an end and this is recognized by seeing in the terminal:</p><br>
 <div align="center"><img src="Imagenes/unJugador/fin.png"></div><br>
 
-<P>Cuando el usuario escoge la opción de dos jugadores el programa llama a la función 'jugar2players' que se encargara de brindar el espacio de juego a los dos usuarios, llamando dos veces la función 'seleccionarJugada' y 'reescribircasilla' que admás de 'comprobarCasillaOcupada' se encargan de la mayor parte del proceso de este modo de juego.<br>
-Al igual que al jugar contra la PC, lo primero que se presentara será el tablero con los espacios mostrando el número que representa cada uno, además del mensaje 'choose a plase':</p><br>
+<P>When the user chooses the two-player option, the program calls the 'jugar2players' function, which will be in charge of providing the game space to the two users, calling the 'seleccionarJugada' and 'reescribirCasilla' functions twice, which in addition to 'comprobarCasillaOcupada' they take care of most of the processing of this game mode.<br>
+As when playing against the PC, the first thing that will be presented will be the board with the spaces that show the number that each one represents, in addition to the message 'choose a place:</p><br>
 <div align="center"><img src="Imagenes/DosJugadores/tableroP2Jugadores.png"></div><br>
 
-<p>En la modalidad de dos jugadores siempre iniciará el player 1 a quien corresponde el simbolo 'O' y el player 2 a quien corresponde el simbolo 'X' en el segundo movimiento (sin posibilidad de cambiar los simbolos ni turnos), si alguno de los jugadores lográ una de las jugadas ganadoras mostradas con anterioridad, el programa, dependiendo de cual player sea, desplegará:</p><br>
-<div align="center"><img src="Imagenes/DosJugadores/player1W.png">    <img src="Imagenes/DosJugadores/player2W.png"></div><br>
+<p>In the two-player modality, player 1, who corresponds to the symbol 'O', and player 2, who corresponds to the symbol 'X', will always start in the second movement (without the possibility of changing the symbols or turns), if any of the players players achieve one of the winning moves shown previously, the program, depending on which player it is, will display:</p><br>
+<div align="center"><img src="Imagenes/DosJugadores/player1W.png">    <img src="Imagenes/DosJugadores/player2W.png"></div><br><BR><BR>
+
+<H3>Flow of the process:Flowchart<H3>
+
+<img src="Imagenes/diagramaDeFlujo.png">
+<br><br><br>
+
+
+<h3>Conclution:<h3>
+
+<p>Este código me fue vastante complicado de estructurar, </p>
+
+
