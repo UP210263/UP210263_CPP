@@ -190,9 +190,9 @@ sistem("clear"): Se encarga de borrar el contenido de los espacios de la matriz,
 <b><div  align="center">   <img  align="left" src="Imagenes/unJugador/formas_ganar1.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar2.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar3.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar4.png">
   <img  align="left" src="Imagenes/unJugador/formas_ganar5.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar6.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar7.png">  <img  align="left" src="Imagenes/unJugador/formas_ganar8.png"></b></div>
 
-<P>Si el jugador logra alguna de esta jugadas el juego desplegará el siguiente mensaje:</p>
+<div align="center"><P>Si el jugador logra alguna de esta jugadas el juego desplegará el siguiente mensaje:</p></div>
 <div align="center"><img src="Imagenes/unJugador/winner.png"></div><br>
-<p>En cambio, si la PC es la gandora el programa imprimirá:</p>
+<div align="center"><p>En cambio, si la PC es la gandora el programa imprimirá:</p></div>
 <div align="center"><img src="Imagenes/unJugador/loser.png"></div><br>
 <p>Pero si los espacios del tablero se agotan y ninguno de los dos a consegido una jugada ganadora el mensaje que se imprimirá será:</p>
 <div align="center"><img src="Imagenes/unJugador/tiedGame.png"></div><br>
