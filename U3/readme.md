@@ -219,9 +219,9 @@ As when playing against the PC, the first thing that will be presented will be t
 <p>When deciding to play against the PC or against another player, it will appear in any of the modes:</p><br>
 <div align="center"><img src="Imagenes/pantallaGeneral.png"></div><br><br>
 <p>In the mode of playing alone, the player must enter the first movement, and immediately the PC's (player="O" and PC="X") will be printed, then the player will follow again and so on until someone win or reach a mapte:</p>
-<div align="center"><p>  1.-</P><img src="Imagenes/unJugador/1JM1.png"><p>  2.-</P><img src="Imagenes/unJugador/1JM2.png"><p>  3.-</P><img src="Imagenes/unJugador/1JM3.png"><p>  4.-</P><img src="Imagenes/unJugador/1JWIN.png"></div><BR>
+<div align="center">  1.-<img src="Imagenes/unJugador/1JM1.png">  2.-<img src="Imagenes/unJugador/1JM2.png"> 3.-<img src="Imagenes/unJugador/1JM3.png">  4.-<img src="Imagenes/unJugador/1JWIN.png"></div><BR>
 <P>In this way the player wins the game, instead if he loses it would be something similar to:<br>
-<div align="center"><p>  1.-</P><img src="Imagenes/unJugador/1JM1P.png"><p>  2.-</P><img src="Imagenes/unJugador/1J2MP.png"><p>  3.-</P><img src="Imagenes/unJugador/1J3MP.png"><p>   3.-</P><img src="Imagenes/unJugador/1JLOSE.png"></DIV><br>
+<div align="center"> 1.-<img src="Imagenes/unJugador/1JM1P.png"> <img src="Imagenes/unJugador/1J2MP.png">  2.-<img src="Imagenes/unJugador/1J3MP.png">  3.-<img src="Imagenes/unJugador/1JLOSE.png"></DIV><br>
 <p>If the spaces are filled without getting a winner, it will print:</p><br>
 <div align="center"><img src="Imagenes/unJugador/empate.png"></div>
 
