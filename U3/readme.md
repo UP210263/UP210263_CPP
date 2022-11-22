@@ -2,7 +2,7 @@
 <h1>Unity III</h1>
 <H2>Building a Functional Tic Tac Toe Board </H2><br>
 <div align="center"> 
-<img width="500"  height="70" src="https://i.pinimg.com/originals/07/24/88/0724884440e8ddd0896ff557b75a222a.gif">
+<img width="500"  height="70" src="https://img.itch.zone/aW1nLzIxNzQ2MzAuZ2lm/original/uOr674.gif">
 </div>
 
 <h3>Index:</h3>
