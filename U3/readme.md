@@ -4,15 +4,15 @@
 <div align="center"> 
 <img  src="https://img.itch.zone/aW1nLzIxNzQ2MzAuZ2lm/original/uOr674.gif">
 </div>
-
+[CONCLUSION](#conclusion)
 <h3>Index:</h3>
-[1-Functions?](https://github.com/UP210263/UP210263_CPP/tree/main/U3#--Functions?--)<br>
+[1-Functions?](#--Functions?--)<br>
 [2-How is the code composed?] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--How-is-the-code-composed?--)<br>
 [3-How does the code work?] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--How-does-the-code-work?--)<br>
 [4-How to use it?]  (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--How-to-use-it?--)<br>
 [5-Flow of the process]  (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--Flow-of-the-process--)<br>
 [6-Examples of operation] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--Examples-of-operation--)<br>
-[7-Conclusion] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--Conclusion--)</p></b><br>
+[7-Conclusion] (#--Conclusion--)</p></b><br>
 
 
 <p>Over the course of this unit we gradually develop the code needed to generate a functional Tic Tac Toe.<br>
@@ -169,14 +169,14 @@ system("clear"): It is in charge of deleting the content of the spaces of the ma
 "\033[0;31m MESSAGE \033[0m" : It is used to give color and style to a specific message or impression.</p><br> <br>
 
 
-<h3>How does the code work?</h3>
+##How does the code work?
 
 <p>As already mentioned, the program requires 16 different functions to function correctly, but how does this program actually work? It certainly follows the normal process flow of any program running a compiler, this process It is from top to bottom, so it is necessary to place the names of the functions, the type of functions they are and what type of variables they receive that will be used within the main or other functions, before the function to be used is presented, this to make it clear to the compiler that this function does exist but that it is found later, so this function naming activates the function processes from the beginning in order to have available all those processes that are after main but that are require to execute the process inside the main. In addition, there is the need to call libraries that allow the execution of some specific processes. </p>
 
 <P>For a matrix to be functional, it is required to determine the type of content that can be placed within its available spaces, and also how many of these spaces it will have. the capacity of the array is the one that is placed after the name "[3][3]" which in this case indicates that it is an array of 9 spaces available to store some value. The type of variable that will be accepted into the array is determined the same as a variable; that is, before the name of the array.</P><br><br>
 
 
-<h3>How to use it?</h3>
+##How to use it?
 
 <p>The code is designed to make the game easy for the player(s) to understand. The first thing that will appear will be the question:<br>
 <div align="center"><img src="Imagenes/unJugador/modoDeJuego.png"></div></p>
@@ -215,7 +215,8 @@ As when playing against the PC, the first thing that will be presented will be t
     <img  src="Imagenes/diagrama03.png"> 
 <br><br><br>
 
-<h3>6.-Examples:</h3>
+##Examples
+
 <p>When deciding to play against the PC or against another player, it will appear in any of the modes:</p><br>
 <div align="center"><img src="Imagenes/pantallaGeneral.png"></div><br><br>
 <p>In the mode of playing alone, the player must enter the first movement, and immediately the PC's (player="O" and PC="X") will be printed, then the player will follow again and so on until someone win or reach a mapte:</p>
@@ -226,7 +227,7 @@ As when playing against the PC, the first thing that will be presented will be t
 <div align="center"><img src="Imagenes/unJugador/empate.png"></div>
 
 
-<h3>Conclusion:</h3>
+## Conclusion
 
 <p>This code was quite difficult for me to structure, in the first instance, because I gave it too long an extension, this is because, to avoid confusion and save analysis time in adapting the functions, I chose to rewrite several functions making them only small changes that in turn generate the same procedure but with different data entry. Secondly, my lack of experience in the development of codes that require a deeper analysis, especially in the arrangement of each of the elements that compose it; This made it difficult for me to clearly visualize how the program would be structured from a general view and later to a more detailed one. In the third instance, I have to admit that I need to put my programming skills into practice, and thus develop my logic, because at certain times I completely lost myself on what I was doing and wasted a lot of time trying to get back to the code. Finally, in the fourth instance, my organization within the code is not very favorable on several occasions, this is due, for the most part, to the fact that I do not organize what I am going to program before typing, so I am blank in front of the screen waiting for ideas to flow out of nowhere and that makes me try various semi-developed ways that are mostly unfinished and that in the end only get in the way of the final code that loses hierarchy organization because I don't have a start order, but rather start several elements at the same time and at the end I see what function was assigned to each function.<br>
 The aforementioned points affected my productivity to give efficiency to the program, since it has several defects, the most obvious is the aesthetics, the backend part absorbed so much time that I did not have enough time to dedicate it to the frontend, which is already bad first impression of the program. In addition, the backend is not elaborated with efficiency, since it has limitations; such as the fact that players do not have the possibility to choose their turns or the symbols they are going to play with, or that you can only play one game and then the program closes, these types of details are elements that I could solve but for a bad reason organization of time and logic it was not possible for me to add them to the program. <BR>
