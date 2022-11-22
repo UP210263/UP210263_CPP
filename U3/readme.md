@@ -216,14 +216,16 @@ As when playing against the PC, the first thing that will be presented will be t
 <br><br><br>
 
 <h3>6.-Examples:</h3>
-<p>Al decidir jugar contra la PC o contra otro jugador, les aparecerá en cualquiera de los modos:</p><br>
+<p>When deciding to play against the PC or against another player, it will appear in any of the modes:</p><br>
 <div align="center"><img src="Imagenes/pantallaGeneral.png"></div><br><br>
-<p>En la modalidad de jugar solo, el jugador deberá ingresar el primer movimiento, y en seguida se imprimirá el de la PC(player="O" and PC="X"), enseguida segira el jugador de nuevo y asi sucecivamente hasta que alguno gane o se llegue a un emapte:</p>
+<p>In the mode of playing alone, the player must enter the first movement, and immediately the PC's (player="O" and PC="X") will be printed, then the player will follow again and so on until someone win or reach a mapte:</p>
 <div align="center"><p>  1.-</P><img src="Imagenes/unJugador/1JM1.png"><p>  2.-</P><img src="Imagenes/unJugador/1JM2.png"><p>  3.-</P><img src="Imagenes/unJugador/1JM3.png"><p>  4.-</P><img src="Imagenes/unJugador/1JWIN.png"></div><BR>
-<P>De esa forma el jugador gana la partida, en cambio si pierde sería algo similar a:<br>
+<P>In this way the player wins the game, instead if he loses it would be something similar to:<br>
 <div align="center"><p>  1.-</P><img src="Imagenes/unJugador/1JM1P.png"><p>  2.-</P><img src="Imagenes/unJugador/1J2MP.png"><p>  3.-</P><img src="Imagenes/unJugador/1J3MP.png"><p>   3.-</P><img src="Imagenes/unJugador/1JLOSE.png"></DIV><br>
-<p>Si se llenan los espacios sin conseguir ganador, se imprimirá:</p><br>
+<p>If the spaces are filled without getting a winner, it will print:</p><br>
 <div align="center"><img src="Imagenes/unJugador/empate.png"></div>
+
+
 <h3>7.-Conclusion:</h3>
 
 <p>This code was quite difficult for me to structure, in the first instance, because I gave it too long an extension, this is because, to avoid confusion and save analysis time in adapting the functions, I chose to rewrite several functions making them only small changes that in turn generate the same procedure but with different data entry. Secondly, my lack of experience in the development of codes that require a deeper analysis, especially in the arrangement of each of the elements that compose it; This made it difficult for me to clearly visualize how the program would be structured from a general view and later to a more detailed one. In the third instance, I have to admit that I need to put my programming skills into practice, and thus develop my logic, because at certain times I completely lost myself on what I was doing and wasted a lot of time trying to get back to the code. Finally, in the fourth instance, my organization within the code is not very favorable on several occasions, this is due, for the most part, to the fact that I do not organize what I am going to program before typing, so I am blank in front of the screen waiting for ideas to flow out of nowhere and that makes me try various semi-developed ways that are mostly unfinished and that in the end only get in the way of the final code that loses hierarchy organization because I don't have a start order, but rather start several elements at the same time and at the end I see what function was assigned to each function.<br>
