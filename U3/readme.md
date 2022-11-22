@@ -6,13 +6,13 @@
 </div>
 
 ## Index: 
-[1.-Functions?](#1-functions)
-[2.-How is the code composed?](#2-how-is-the-code-composed)
-[3.-How does the code work?](#3-how-does-the-code-work)
-[4.-How to use it?](#4-how-to-use-it)
-[5.-Flow of the process](#5-flow-of-the-process)
-[6.-Examples of operation](#6-examples)
-[7.-Conclucion](#7-conclusion)
+[1.-Functions?](#1-functions)<br>
+[2.-How is the code composed?](#2-how-is-the-code-composed)<br>
+[3.-How does the code work?](#3-how-does-the-code-work)<br>
+[4.-How to use it?](#4-how-to-use-it)<br>
+[5.-Flow of the process](#5-flow-of-the-process)<br>
+[6.-Examples of operation](#6-examples)<br>
+[7.-Conclucion](#7-conclusion)<br>
 </p></b><br>
 
 
