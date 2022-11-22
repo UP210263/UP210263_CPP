@@ -6,13 +6,13 @@
 </div>
 
 <h3>Index:</h3>
-<b><p>1.-Functions?<br>
-      2.-How is the code composed?<br>
-      3.-How does the code work?<br>
-      4.-How to use it?<br>
-      5.-Flow of the process<br>
-      6.-Examples of operation<br>
-      7.-Conclusion</p></b><br>
+[1.-Functions?](https://github.com/UP210263/UP210263_CPP/tree/main/U3#--1.-Functions?--)<br>
+[2.-How is the code composed?] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--2.-How-is-the-code-composed?--)<br>
+[3.-How does the code work?] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--3.-How-does-the-code-work?--)<br>
+[4.-How to use it?]  (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--4.-How-to-use-it?--)<br>
+[5.-Flow of the process]  (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--5.-Flow-of-the-process--)<br>
+[6.-Examples of operation] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--6.-Examples-of-operation--)<br>
+[7.-Conclusion] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--7.-Conclusion--)</p></b><br>
 
 
 <p>Over the course of this unit we gradually develop the code needed to generate a functional Tic Tac Toe.<br>
