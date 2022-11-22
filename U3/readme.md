@@ -212,7 +212,7 @@ As when playing against the PC, the first thing that will be presented will be t
 <H3>5.-Flow of the process:Flowchart<H3>
 
 <img  src="Imagenes/diagrama01.jpeg">                        <img  src="Imagenes/diagrama02.png">                                     
-<img  src="Imagenes/diagrama03.png"> 
+    <img  src="Imagenes/diagrama03.png"> 
 <br><br><br>
 
 <h3>6.-Examples:</h3>
