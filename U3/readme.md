@@ -1,6 +1,6 @@
 
 <h1>Unity III</h1>
-<H2>Building a Functional Tic Tac Toe Board </H2><br>
+# Building a Functional Tic Tac Toe Board
 <div align="center"> 
 <img  src="https://img.itch.zone/aW1nLzIxNzQ2MzAuZ2lm/original/uOr674.gif">
 </div>
@@ -236,4 +236,6 @@ The program has the flaw that when using the two-player mode and reaching a draw
 But despite all the defects that the program has, it fulfills its function of allowing a tic tac toe to be executed in the terminal and that when playing against the PC, it has the ability to detect which box to choose to avoid let the opponent win. I have also learned a lot from this first slightly more "complex" code, either about the functions, the use that can be given to a matrix and above all the ability to produce a little intelligence for decisions within the game by the PC<br>
 I think that the most important thing is to learn from mistakes in order to know how to correct or avoid them in the future, which is why I think that this experience has been stressful, vastly enriching for my growth in the professional field.</p>
 
+
+<div align="center">[Return to Start](#building-a-functional-tic-tac-toe-board)</div>
 
