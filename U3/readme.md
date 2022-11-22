@@ -4,29 +4,30 @@
 <div align="center"> 
 <img  src="https://img.itch.zone/aW1nLzIxNzQ2MzAuZ2lm/original/uOr674.gif">
 </div>
-[CONCLUSION](#conclusion)
-<h3>Index:</h3>
-[1-Functions?](#--Functions?--)<br>
-[2-How is the code composed?] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--How-is-the-code-composed?--)<br>
-[3-How does the code work?] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--How-does-the-code-work?--)<br>
-[4-How to use it?]  (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--How-to-use-it?--)<br>
-[5-Flow of the process]  (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--Flow-of-the-process--)<br>
-[6-Examples of operation] (https://github.com/UP210263/UP210263_CPP/tree/main/U3#--Examples-of-operation--)<br>
-[7-Conclusion] (#--Conclusion--)</p></b><br>
+
+## Index: 
+[1.-Functions?](#1-functions)
+[2.-How is the code composed?](#2-how-is-the-code-composed)
+[3.-How does the code work?](#3-how-does-the-code-work)
+[4.-How to use it?](#4-how-to-use-it)
+[5.-Flow of the process](#5-flow-of-the-process)
+[6.-Examples of operation](#6-examples)
+[7.-Conclucion](#7-conclusion)
+</p></b><br>
 
 
 <p>Over the course of this unit we gradually develop the code needed to generate a functional Tic Tac Toe.<br>
 Below is a detailed explanation of how it works, and in what order each part of this code is executed.</p><br><br>
 
 
-<h3>Functions?</h3>
+## 1.-Functions?
 
 <p> Since the main topic of this unit was FUNCTIONS, they are very present within the structure of the game code.<br>
 First of all, it is necessary to make it clear that it is a function so as not to leave loose ends; well, FUNCTIONS are like code drawers in which specific commands are stored for the execution of a certain process. Said drawer has a unique name that is used by the programmer to invoke the procedure that it has within itself, and that can be repeated as many times as necessary just by writing its name. </p><br><br>
 
 
 
-<h3>How is the code composed?</h3>
+## 2.-How is the code composed?</h3>
 
 <p>Now that the term FUNCTION is clear, it's time to comment that this program requires 16 functions to make the game work as it will be shown later.<br>
 Although the code is somewhat extensive for the nature of the final product, the truth is that the element to blame for the extension of the code is the semi-intelligence that we endowed the PC with so that when playing against the users the game would represent a real challenge. . Thanks to this intelligence, it was necessary to replicate several of the already existing functions and make small modifications to them so that they would fulfill the task of carrying out simulations of possible plays for the PC and in this way not just draw numbers randomly.<br>
@@ -169,14 +170,14 @@ system("clear"): It is in charge of deleting the content of the spaces of the ma
 "\033[0;31m MESSAGE \033[0m" : It is used to give color and style to a specific message or impression.</p><br> <br>
 
 
-##How does the code work?
+## 3.-How does the code work?
 
 <p>As already mentioned, the program requires 16 different functions to function correctly, but how does this program actually work? It certainly follows the normal process flow of any program running a compiler, this process It is from top to bottom, so it is necessary to place the names of the functions, the type of functions they are and what type of variables they receive that will be used within the main or other functions, before the function to be used is presented, this to make it clear to the compiler that this function does exist but that it is found later, so this function naming activates the function processes from the beginning in order to have available all those processes that are after main but that are require to execute the process inside the main. In addition, there is the need to call libraries that allow the execution of some specific processes. </p>
 
 <P>For a matrix to be functional, it is required to determine the type of content that can be placed within its available spaces, and also how many of these spaces it will have. the capacity of the array is the one that is placed after the name "[3][3]" which in this case indicates that it is an array of 9 spaces available to store some value. The type of variable that will be accepted into the array is determined the same as a variable; that is, before the name of the array.</P><br><br>
 
 
-##How to use it?
+## 4.-How to use it?
 
 <p>The code is designed to make the game easy for the player(s) to understand. The first thing that will appear will be the question:<br>
 <div align="center"><img src="Imagenes/unJugador/modoDeJuego.png"></div></p>
@@ -209,13 +210,13 @@ As when playing against the PC, the first thing that will be presented will be t
 <p>In the two-player modality, player 1, who corresponds to the symbol 'O', and player 2, who corresponds to the symbol 'X', will always start in the second movement (without the possibility of changing the symbols or turns), if any of the players players achieve one of the winning moves shown previously, the program, depending on which player it is, will display:</p><br>
 <div align="center"><img src="Imagenes/DosJugadores/player1W.png">    <img src="Imagenes/DosJugadores/player2W.png"></div><br><BR><BR>
 
-<H3>Flow of the process:Flowchart<H3>
+## 5.-Flow of the process:Flowchart
 
 <img  src="Imagenes/diagrama01.jpeg">                        <img  src="Imagenes/diagrama02.png">                                     
     <img  src="Imagenes/diagrama03.png"> 
 <br><br><br>
 
-##Examples
+## 6.-Examples
 
 <p>When deciding to play against the PC or against another player, it will appear in any of the modes:</p><br>
 <div align="center"><img src="Imagenes/pantallaGeneral.png"></div><br><br>
@@ -227,13 +228,12 @@ As when playing against the PC, the first thing that will be presented will be t
 <div align="center"><img src="Imagenes/unJugador/empate.png"></div>
 
 
-## Conclusion
+## 7.-Conclusion
 
 <p>This code was quite difficult for me to structure, in the first instance, because I gave it too long an extension, this is because, to avoid confusion and save analysis time in adapting the functions, I chose to rewrite several functions making them only small changes that in turn generate the same procedure but with different data entry. Secondly, my lack of experience in the development of codes that require a deeper analysis, especially in the arrangement of each of the elements that compose it; This made it difficult for me to clearly visualize how the program would be structured from a general view and later to a more detailed one. In the third instance, I have to admit that I need to put my programming skills into practice, and thus develop my logic, because at certain times I completely lost myself on what I was doing and wasted a lot of time trying to get back to the code. Finally, in the fourth instance, my organization within the code is not very favorable on several occasions, this is due, for the most part, to the fact that I do not organize what I am going to program before typing, so I am blank in front of the screen waiting for ideas to flow out of nowhere and that makes me try various semi-developed ways that are mostly unfinished and that in the end only get in the way of the final code that loses hierarchy organization because I don't have a start order, but rather start several elements at the same time and at the end I see what function was assigned to each function.<br>
 The aforementioned points affected my productivity to give efficiency to the program, since it has several defects, the most obvious is the aesthetics, the backend part absorbed so much time that I did not have enough time to dedicate it to the frontend, which is already bad first impression of the program. In addition, the backend is not elaborated with efficiency, since it has limitations; such as the fact that players do not have the possibility to choose their turns or the symbols they are going to play with, or that you can only play one game and then the program closes, these types of details are elements that I could solve but for a bad reason organization of time and logic it was not possible for me to add them to the program. <BR>
 The program has the flaw that when using the two-player mode and reaching a draw, the game does not end and it keeps asking you for numbers even when there is no space left to place them, so the game becomes infinite, only terminating the program forcing it through ctrl+C.<br>
 But despite all the defects that the program has, it fulfills its function of allowing a tic tac toe to be executed in the terminal and that when playing against the PC, it has the ability to detect which box to choose to avoid let the opponent win. I have also learned a lot from this first slightly more "complex" code, either about the functions, the use that can be given to a matrix and above all the ability to produce a little intelligence for decisions within the game by the PC<br>
 I think that the most important thing is to learn from mistakes in order to know how to correct or avoid them in the future, which is why I think that this experience has been stressful, vastly enriching for my growth in the professional field.</p>
-
 
 
