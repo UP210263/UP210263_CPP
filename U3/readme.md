@@ -1,6 +1,6 @@
 
 <h1>Unity III</h1>
-# Building a Functional Tic Tac Toe Board
+## Building a Functional Tic Tac Toe Board
 <div align="center"> 
 <img  src="https://img.itch.zone/aW1nLzIxNzQ2MzAuZ2lm/original/uOr674.gif">
 </div>
