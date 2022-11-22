@@ -12,7 +12,7 @@
 [4.-How to use it?](#4-how-to-use-it)<br>
 [5.-Flow of the process](#5-flow-of-the-process)<br>
 [6.-Examples of operation](#6-examples)<br>
-[7.-Conclucion](#7-conclusion)<br>
+[7.-Conclusion](#7-conclusion)<br>
 </p></b><br>
 
 
@@ -237,5 +237,5 @@ But despite all the defects that the program has, it fulfills its function of al
 I think that the most important thing is to learn from mistakes in order to know how to correct or avoid them in the future, which is why I think that this experience has been stressful, vastly enriching for my growth in the professional field.</p>
 
 
-<div align="center">[Return to Start](#building-a-functional-tic-tac-toe-board)</div>
+[Return to Start](#building-a-functional-tic-tac-toe-board)
 
